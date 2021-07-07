@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import data from "./data";
+import { data } from "./subData";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {

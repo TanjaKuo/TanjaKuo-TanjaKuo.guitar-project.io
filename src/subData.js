@@ -4,7 +4,8 @@ import MessageIcon from "@material-ui/icons/Message";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
-const data = [
+import b1 from "./image/b1.png";
+export const data = [
   {
     page: "prodcuts",
     links: [
@@ -33,4 +34,30 @@ const data = [
   },
 ];
 
-export default data;
+export const bannerImg = [
+  {
+    id: 1,
+    src: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
+    alt: "banner1",
+  },
+  {
+    id: 2,
+    src: <b1 />,
+    alt: "banner2",
+  },
+  {
+    id: 3,
+    src: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
+    alt: "banner3",
+  },
+  {
+    id: 4,
+    src: "",
+    alt: "banner4",
+  },
+  {
+    id: 5,
+    src: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
+    alt: "banner5",
+  },
+];

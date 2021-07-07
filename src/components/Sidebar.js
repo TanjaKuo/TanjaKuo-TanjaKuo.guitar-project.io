@@ -1,6 +1,6 @@
 import React from "react";
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation";
-import sidelinks from "../data";
+import { data } from "../subData";
 import { useGlobalContext } from "../context";
 
 const Sidebar = () => {
@@ -20,7 +20,7 @@ const Sidebar = () => {
           <h2 className="side-logo">Mr.Guitar</h2>
         </div>
         <div className="sidebar-links">
-          {sidelinks.map((item, index) => {
+          {data.map((item, index) => {
             const { page, links } = item;
             return (
               <article key={index}>
