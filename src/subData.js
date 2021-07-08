@@ -4,7 +4,7 @@ import MessageIcon from "@material-ui/icons/Message";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
-import b1 from "./image/b1.png";
+import banner1 from "./image/banner1.png";
 export const data = [
   {
     page: "prodcuts",

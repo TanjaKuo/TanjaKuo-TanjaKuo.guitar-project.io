@@ -570,6 +570,7 @@ Stripe Styles
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+  margin-bottom: 3rem;
 }
 
 .guitar-sale {
@@ -685,3 +686,34 @@ Stripe Styles
   color: #000000;
   font-size: 38px;
 }
+
+/* Home page post-section */
+.post-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 18rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  resize: horizontal;
+  overflow: auto;
+}
+/* 
+https://www.w3schools.com/cssref/css3_pr_resize.asp
+https://stackoverflow.com/questions/19213712/my-website-mess-up-with-browser-resize
+*/
+
+/* 
+@media screen and (max-width: 480px) {
+ .post-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+} */

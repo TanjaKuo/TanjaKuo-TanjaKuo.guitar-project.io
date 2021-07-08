@@ -4,7 +4,7 @@ import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { bannerImg } from "../subData";
-import b1 from "../image/b1.png";
+import banner1 from "../image/banner1.png";
 import banner2 from "../image/banner2.png";
 import banner3 from "../image/banner3.png";
 import banner4 from "../image/banner4.png";
@@ -48,7 +48,7 @@ const Banner = () => {
   return (
     <Carousel {...settings}>
       <div>
-        <img src={b1} alt="banner1" className="banner" />;
+        <img src={banner1} alt="banner1" className="banner" />;
       </div>
       <div>
         <img src={banner2} alt="banner2" className="banner" />;

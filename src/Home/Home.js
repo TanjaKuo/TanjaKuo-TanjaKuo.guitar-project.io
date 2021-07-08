@@ -4,8 +4,17 @@ import hero from "../image/hero3.png";
 // Components
 import Banner from "../components/Banner";
 import GuitarItem from "../components/GuitarItem";
+import Post from "../components/Post";
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
+  /*  const scrollY = (e) => {
+    const postSection = e.target.scrollHeight;
+    const tempScroll = e.target.getBoundingClientRect();
+    //const heightSize =
+    console.log(postSection);
+    console.log(tempScroll);
+    alert(window.innerWidth); // full window width
+  }; */
   return (
     <>
       <section className="hero" onMouseOver={closeSubmenu}>
@@ -32,9 +41,9 @@ const Home = () => {
           <GuitarItem />
         </div>
       </div>
-      {/*  <section className="hero">
-        <div className="ul"></div>
-      </section> */}
+      <section className="post-section" /* onScroll={scrollY} */>
+        <Post />
+      </section>
     </>
   );
 };
