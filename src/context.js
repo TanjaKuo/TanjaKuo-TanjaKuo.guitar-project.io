@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { data } from "./subData";
+import { data /* , footerInfo */ } from "./subData";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
   const [isFooterOpen, setFooterOpen] = useState(true);
-  const [content, setContent] = useState({ content: "", name: [] });
+  //const [content, setContent] = useState({ content: "", name: [] });
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -26,9 +26,12 @@ const AppProvider = ({ children }) => {
     setIsSubmenuOpen(false);
   };
 
-  const openFooter = () => {
+  /* const openFooter = (content, size) => {
+    const page2 = footerInfo.find((item2) => item2.title === content);
+    setContent(page2);
+    setLocation(size);
     setFooterOpen(true);
-  };
+  }; */
 
   const closeFooter = () => {
     setFooterOpen(false);
@@ -46,7 +49,7 @@ const AppProvider = ({ children }) => {
         location,
         page,
         isFooterOpen,
-        openFooter,
+        //openFooter,
         closeFooter,
       }}
     >

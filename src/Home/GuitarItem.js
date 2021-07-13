@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { guitarImg } from "../subData";
 /* import fender1 from "../image/fender1.png";
@@ -71,8 +71,8 @@ const GuitarItem = () => {
         {guitarImg.map((infos) => {
           const { id, img, alt } = infos;
           return (
-            <div>
-              <img src={img.url} alt={alt} key={id} className="guitars" />
+            <div key={id}>
+              <img src={img.url} alt={alt} className="guitars" />
             </div>
           );
         })}

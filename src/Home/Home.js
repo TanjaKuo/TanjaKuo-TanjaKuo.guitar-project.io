@@ -2,9 +2,9 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import hero from "../image/hero3.png";
 // Components
-import Banner from "../components/Banner";
-import GuitarItem from "../components/GuitarItem";
-import Post from "../components/Post";
+import Banner from "./Banner";
+import GuitarItem from "./GuitarItem";
+import Post from "./Post";
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
   /*  const scrollY = (e) => {
@@ -33,11 +33,11 @@ const Home = () => {
           </article>
         </div>
       </section>
-      <div class="tempbanner">
+      <div className="tempbanner">
         <Banner />
       </div>
       <div className="guitar-section">
-        <div class="guitar">
+        <div className="guitar">
           <GuitarItem />
         </div>
       </div>

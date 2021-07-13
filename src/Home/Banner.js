@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ProtoType from "prop-types";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { bannerImg, data } from "../subData";
+import { bannerImg } from "../subData";
 /* import banner1 from "../image/banner1.png";
 import banner2 from "../image/banner2.png";
 import banner3 from "../image/banner3.png";
@@ -73,8 +73,8 @@ const Banner = () => {
       {bannerImg.map((detail) => {
         const { id, img, alt } = detail;
         return (
-          <div>
-            <img src={img.url} alt={alt} key={id} className="banner" />
+          <div key={id}>
+            <img src={img.url} alt={alt} className="banner" />
           </div>
         );
       })}

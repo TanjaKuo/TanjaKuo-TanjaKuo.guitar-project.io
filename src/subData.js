@@ -141,10 +141,10 @@ export const guitarImg = [
   },
 ];
 
-
-const footerPolicy = [
+export const footerInfo = [
   {
     id: 20,
+    title: "policy",
     name: [
       {
         label: "Shipping policy",
@@ -158,6 +158,7 @@ const footerPolicy = [
   },
   {
     id: 21,
+    title: "hours",
     name: [
       {
         label: "Monday: 10am - 6pm",
@@ -172,6 +173,7 @@ const footerPolicy = [
   },
   {
     id: 22,
+    title: "address",
     name: [
       {
         label: "10 Bellerine Street, GEELONG VIC 3220",

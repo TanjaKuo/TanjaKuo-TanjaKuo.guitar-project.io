@@ -56,21 +56,32 @@ const Footer = () => {
 export default Footer;
  */
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const Navbar = () => {
-  const { isFooterOpen, openFooter, closeFooter, openSidebar } =
-    useGlobalContext();
+  const { openFooter } = useGlobalContext();
+  const butt = useRef(null);
+  useEffect(() => {
+    const button = butt.current;
+    if (button.value === "policiy") {
+      console.log("it is working");
+    }
+    console.log(button);
+  }, []);
+
   const displayFooter = (e) => {
-    const page2 = e.target.textContent;
+    const button = butt.current;
+    if (button.value === "policy") {
+      console.log("it is working");
+    }
+    console.log(button);
     const tempContent = e.target.getBoundingClientRect();
     const height = tempContent.height + 30;
-    console.log(page2);
     console.log(tempContent);
     console.log(height);
-    openFooter();
+    openFooter(button, { height });
     // {center, bottom} -> {coordinate}
   };
   return (
@@ -78,7 +89,13 @@ const Navbar = () => {
       <div className="footer-center">
         <div className="footer-header">
           <h3 className="footer-title">policy</h3>
-          <button className="footer-btn toggle-btn" onClick={openFooter}>
+          <button
+            className="footer-btn toggle-btn"
+            name="policy"
+            value="policy"
+            ref={butt}
+            onClick={displayFooter}
+          >
             <MenuIcon />
           </button>
           <div className="footer-content">
@@ -94,9 +111,9 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="footer-header">
+        {/* <div className="footer-header">
           <h3 className="footer-title">policy</h3>
-          <button className="footer-btn toggle-btn" onMouseOver={displayFooter}>
+          <button className="footer-btn toggle-btn" name="hours" value="hours">
             <MenuIcon />
           </button>
           <div className="footer-content">
@@ -115,7 +132,11 @@ const Navbar = () => {
         </div>
         <div className="footer-header">
           <h3 className="footer-title">policy</h3>
-          <button className="footer-btn toggle-btn" onMouseOver={displayFooter}>
+          <button
+            className="footer-btn toggle-btn"
+            name="address"
+            value="address"
+          >
             <MenuIcon />
           </button>
           <div className="footer-content">
@@ -127,7 +148,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
