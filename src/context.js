@@ -7,6 +7,8 @@ const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
+  const [isFooterOpen, setFooterOpen] = useState(true);
+  const [content, setContent] = useState({ content: "", name: [] });
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -24,6 +26,14 @@ const AppProvider = ({ children }) => {
     setIsSubmenuOpen(false);
   };
 
+  const openFooter = () => {
+    setFooterOpen(true);
+  };
+
+  const closeFooter = () => {
+    setFooterOpen(false);
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -35,6 +45,9 @@ const AppProvider = ({ children }) => {
         closeSubmenu,
         location,
         page,
+        isFooterOpen,
+        openFooter,
+        closeFooter,
       }}
     >
       {children}

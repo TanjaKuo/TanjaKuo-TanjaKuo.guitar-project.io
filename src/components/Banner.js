@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import ProtoType from "prop-types";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { bannerImg } from "../subData";
-import banner1 from "../image/banner1.png";
+import { bannerImg, data } from "../subData";
+/* import banner1 from "../image/banner1.png";
 import banner2 from "../image/banner2.png";
 import banner3 from "../image/banner3.png";
 import banner4 from "../image/banner4.png";
-import banner5 from "../image/banner5.png";
+import banner5 from "../image/banner5.png"; */
 
 const Banner = () => {
-  const [img, setImg] = useState(bannerImg);
+  //const [img, setImg] = useState(bannerImg);
   const settings = {
     /* dots: true,
     infinite: true,
@@ -47,7 +48,38 @@ const Banner = () => {
   ); */
   return (
     <Carousel {...settings}>
-      <div>
+      {/* {data.map((item, index) => {
+        const { page, links } = item;
+        return (
+          <article key={index}>
+            <h3>{page}</h3>
+            <div className="sidebar-sublinks">
+              {links.map((link, index) => {
+                const { label, icon, url } = link;
+                return (
+                  <button className="sidebar-btn" key={index}>
+                    <a href={url} key={index}>
+                      {icon}
+                      {label}
+                    </a>
+                  </button>
+                );
+              })}
+            </div>
+          </article>
+        );
+      })} */}
+
+      {bannerImg.map((detail) => {
+        const { id, img, alt } = detail;
+        return (
+          <div>
+            <img src={img.url} alt={alt} key={id} className="banner" />
+          </div>
+        );
+      })}
+
+      {/*  <div>
         <img src={banner1} alt="banner1" className="banner" />;
       </div>
       <div>
@@ -61,9 +93,14 @@ const Banner = () => {
       </div>
       <div>
         <img src={banner5} alt="banner5" className="banner" />;
-      </div>
+      </div> */}
     </Carousel>
   );
 };
 
+Banner.ProtoType = {
+  img: ProtoType.object.isRequired,
+  id: ProtoType.number.isRequired,
+  alt: ProtoType.string.isRequired,
+};
 export default Banner;

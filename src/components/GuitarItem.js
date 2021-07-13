@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import fender1 from "../image/fender1.png";
+import { guitarImg } from "../subData";
+/* import fender1 from "../image/fender1.png";
 import fender2 from "../image/fender2.png";
 import gibson3 from "../image/gibson3.png";
 import gibson4 from "../image/gibson4.png";
 import gibson5 from "../image/gibson5.png";
 import yamaha6 from "../image/yamaha6.png";
 import yamaha7 from "../image/yamaha7.png";
-import yamaha8 from "../image/yamaha8.png";
+import yamaha8 from "../image/yamaha8.png"; */
 
 const GuitarItem = () => {
   const settings = {
@@ -67,6 +68,15 @@ const GuitarItem = () => {
     <div>
       <h2 className="guitar-sale"> Hot Sale </h2>
       <Slider {...settings}>
+        {guitarImg.map((infos) => {
+          const { id, img, alt } = infos;
+          return (
+            <div>
+              <img src={img.url} alt={alt} key={id} className="guitars" />
+            </div>
+          );
+        })}
+        {/* 
         <div>
           <img src={fender1} alt="guitar1" className="guitars" />
         </div>
@@ -90,10 +100,8 @@ const GuitarItem = () => {
         </div>
         <div>
           <img src={yamaha8} alt="guitar5" className="guitars" />
-        </div>
-        <div>
-          {/* <img src={yamaha8} alt="guitar5" className="guitars" /> */}
-        </div>
+        </div> */}
+        <div>{/* leave one empty div for space */}</div>
       </Slider>
     </div>
   );

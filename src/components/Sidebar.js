@@ -17,7 +17,7 @@ const Sidebar = () => {
           <CancelPresentationIcon fontSize="large" color="secondary" />
         </button>
         <div className="logo-sidebar">
-          <h2 className="side-logo">Mr.Guitar</h2>
+          <h2 className="side-logo">Mr .Guitar</h2>
         </div>
         <div className="sidebar-links">
           {data.map((item, index) => {

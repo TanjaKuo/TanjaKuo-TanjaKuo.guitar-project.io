@@ -28,7 +28,7 @@ const Home = () => {
             </p>
             <button className="buy-btn">Buy one now</button>{" "}
           </article>
-          <article className="hero-images">
+          <article className="hero-images stand-up">
             <img src={hero} alt="hero" />
           </article>
         </div>

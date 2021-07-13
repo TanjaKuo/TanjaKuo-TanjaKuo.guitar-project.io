@@ -10,8 +10,12 @@ import Typography from "@material-ui/core/Typography";
 import banner1 from "../image/banner1.png";
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 255,
     maxHeight: 400,
+    marginRight: "2rem",
+    marginBottom: "1rem",
+    boxShadow:
+      "rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px",
   },
   media: {
     height: 140,
@@ -26,7 +30,7 @@ export default function Post() {
     const divContainer = container.current;
   }, []); */
   return (
-    <div /* ref={container} */>
+    <div className="post-container" /* ref={container} */>
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
