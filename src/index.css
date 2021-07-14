@@ -832,3 +832,7 @@ https://zurb.com/playground/motion-ui
     color: var(--clr-red);
   }
 }
+
+.faq-info {
+  margin-top: 13rem;
+}

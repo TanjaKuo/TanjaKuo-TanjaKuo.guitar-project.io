@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./Home/Home";
 import Product from "./Product/Product";
 import Contact from "./Contact/Contact";
+import FAQ from "./FAQ/FAQ";
 import Error from "./Error/Error";
 
 import "./App.css";
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route exact path="/product">
           <Product />
+        </Route>
+        <Route exact path="/faq">
+          <FAQ />
         </Route>
         <Route exact path="*">
           <Error />

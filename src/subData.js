@@ -177,3 +177,54 @@ export const footerInfo = [
     ],
   },
 ];
+
+export const faq = [
+  {
+    id: 60,
+    question: "Where are you located?",
+    answer:
+      "We’re in Clayton, Melbourne! Address is Shop 4, 2167-2181 Princes Highway, Clayton, Victoria 3168.",
+  },
+  {
+    id: 61,
+    question: "What are your trading hours?",
+    answer:
+      "We’re currently open 10am-5pm, 7 days a week. You can call anytime on (03) 9546 0188, email info@skymusic.com.au or chat with us via the Live Chat on our website during business hours.",
+  },
+  {
+    id: 62,
+    question: "When can I expect my online order to arrive?",
+    answer:
+      "Shipping Australia wide varies from 1-7 days or more depending on your location. We endeavour to have orders dispatched within 1-2 business days, so you will receive order confirmation immediately, and order tracking will follow in 1-2 days. From there you can track your package with the assigned courier.Full shipping and delivery policy is available here.",
+  },
+  {
+    id: 63,
+    question: "Do you do repairs and restrings?",
+    answer:
+      "We’re currently not accepting any new repairs or restrings due to a backlog of existing repairs that take priority over new work. There’s currently no known date we’ll start accepting repairs and restrings again.",
+  },
+  {
+    id: 64,
+    question: "Do you offer lay-by?",
+    answer:
+      "We do! We offer lay-by that requires a 20% deposit on the advertised price of an item and payment must be completed within three months from the sale. Pre-order and special order items require a 20% deposit and payment to be completed within three of the item arriving in-store. We cannot accept layby online, so please call or e-mail to secure your new instrument!",
+  },
+  {
+    id: 65,
+    question: "Do you offer payment options like AfterPay, Zip or Studio19?",
+    answer:
+      "Yes! We’re partnered with Zip and Studio19. More info is available here.",
+  },
+  {
+    id: 66,
+    question: "Can I return my item?",
+    answer:
+      "We have a few option available for returns due to a variety of reasons such as change of mind, warranty and service.",
+  },
+  {
+    id: 67,
+    question: "Do you accept online and phone orders?",
+    answer:
+      "We absolutely do! We ship most online orders over $100 for free Australia-wide, and orders are dispatched within 1-2 days business days. Dispatching involves checking and safely packing your order as well as booking it via a courier or Australia Post. Tracking will be available in 2-3 business days in most cases. Please check your Spam or Junk folder regularly, and contact us if you haven't heard anything within 5 business days. All of our online and phone orders go through an O.K. check by our warehouse staff before leaving the store. Guitars and basses are inspected and set-up to ensure everything is working as it should, as per the inspection card included with your order.",
+  },
+];
