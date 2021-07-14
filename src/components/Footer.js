@@ -1,105 +1,20 @@
-/* import React from "react";
-import MenuIcon from "@material-ui/icons/Menu";
-import { useGlobalContext } from "../context";
-
-const Footer = () => {
-  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
-
-  return (
-    <div>
-      <footer className="footer">
-        <div className="footer-center">
-          <div className="footer-header">
-            <div className="footer-section">
-              <h4 className="footer-title">Information</h4>
-              <ul className="policy">
-                <div className="footer-info">
-                  <button className="policy-btn">Shipping Policy</button>
-                  <button className="policy-btn">Refund Policy</button>
-                  <button className="policy-btn">Privacy Policy</button>
-                  <button className="policy-btn">Term of Service</button>
-                  <button className="policy-btn">Click and Collect</button>
-                  <button className="policy-btn">Covid-19 Policy</button>
-                </div>
-              </ul>
-            </div>
-            <div className="footer-section">
-              <h4 className="footer-title">Trading Hours</h4>
-              <div className="footer-info">
-                <p>Monday: 10am - 6pm</p>
-                <p> Tuesday: 10am - 6pm </p>
-                <p>Wednesday: 10am - 6pm</p>
-                <p>Thursday: 10am - 6pm </p>
-                <p>Friday: 10am - 6pm </p>
-                <p>Saturday: 10am - 5pm </p>
-                Closed Public Holidays
-              </div>
-            </div>
-            <div className="footer-section">
-              <h4 className="footer-title">Contact</h4>
-              <div className="footer-info">
-                <p>10 Bellerine Street, GEELONG VIC 3220</p>
-                <p>ph: 0423235600</p>
-                <p>Email: harro@mr-guitar@gmail.com</p>
-              </div>
-            </div>
-            <button className="btn toggle-btn" onClick={openSidebar}>
-              <MenuIcon />
-            </button>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default Footer;
- */
-
-import React, { useRef, useEffect } from "react";
-import { useGlobalContext } from "../context";
-import MenuIcon from "@material-ui/icons/Menu";
+import React from "react";
+import FooterSidebar from "./FooterSidebar";
+import { footerInfo } from "../subData";
 
 const Navbar = () => {
-  const { openFooter } = useGlobalContext();
-  const butt = useRef(null);
-  useEffect(() => {
-    const button = butt.current;
-    if (button.value === "policiy") {
-      console.log("it is working");
-    }
-    console.log(button);
-  }, []);
-
-  const displayFooter = (e) => {
-    const button = butt.current;
-    if (button.value === "policy") {
-      console.log("it is working");
-    }
-    console.log(button);
-    const tempContent = e.target.getBoundingClientRect();
-    const height = tempContent.height + 30;
-    console.log(tempContent);
-    console.log(height);
-    openFooter(button, { height });
-    // {center, bottom} -> {coordinate}
-  };
   return (
     <footer className="footer">
       <div className="footer-center">
-        <div className="footer-header">
+        <div className="footer-mobile-show">
+          {footerInfo.map((info) => {
+            return <FooterSidebar key={info.id} {...info}></FooterSidebar>;
+          })}
+        </div>
+        <div className="footer-header footer-hide">
           <h3 className="footer-title">policy</h3>
-          <button
-            className="footer-btn toggle-btn"
-            name="policy"
-            value="policy"
-            ref={butt}
-            onClick={displayFooter}
-          >
-            <MenuIcon />
-          </button>
           <div className="footer-content">
-            <ul className="footer-links">
+            <ul className="footer-link">
               <li className="policy-links">
                 <button className="policy-btn ">Shipping Policy</button>
                 <button className="policy-btn">Refund Policy</button>
@@ -111,20 +26,17 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        {/* <div className="footer-header">
-          <h3 className="footer-title">policy</h3>
-          <button className="footer-btn toggle-btn" name="hours" value="hours">
-            <MenuIcon />
-          </button>
+        <div className="footer-header">
+          <h3 className="footer-title">Trading Hours</h3>
           <div className="footer-content">
             <ul className="footer-links">
-              <li className="policy-links">
-                <p>Monday: 10am - 6pm</p>
-                <p> Tuesday: 10am - 6pm </p>
-                <p>Wednesday: 10am - 6pm</p>
-                <p>Thursday: 10am - 6pm </p>
-                <p>Friday: 10am - 6pm </p>
-                <p>Saturday: 10am - 5pm </p>
+              <li className="holiday">
+                <p className="hours">Monday: 10am - 6pm</p>
+                <p className="hours"> Tuesday: 10am - 6pm </p>
+                <p className="hours">Wednesday: 10am - 6pm</p>
+                <p className="hours">Thursday: 10am - 6pm </p>
+                <p className="hours">Friday: 10am - 6pm </p>
+                <p className="hours">Saturday: 10am - 5pm </p>
                 Closed Public Holidays
               </li>
             </ul>
@@ -132,23 +44,16 @@ const Navbar = () => {
         </div>
         <div className="footer-header">
           <h3 className="footer-title">policy</h3>
-          <button
-            className="footer-btn toggle-btn"
-            name="address"
-            value="address"
-          >
-            <MenuIcon />
-          </button>
           <div className="footer-content">
             <ul className="footer-links">
-              <li className="policy-links">
-                <p>10 Bellerine Street, GEELONG VIC 3220</p>
-                <p>ph: 0423235600</p>
-                <p>Email: harro@mr-guitar@gmail.com</p>
+              <li>
+                <p className="hours">10 Bellerine Street, GEELONG VIC 3220</p>
+                <p className="hours">ph: 0423235600</p>
+                <p className="hours">Email: harro@mr-guitar@gmail.com</p>
               </li>
             </ul>
           </div>
-        </div> */}
+        </div>
       </div>
     </footer>
   );

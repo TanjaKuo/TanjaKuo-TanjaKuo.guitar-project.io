@@ -1,23 +1,41 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useGlobalContext } from "../context";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
-const FooterSidebar = () => {
-  const { isFooterOpen, location } = useGlobalContext();
-  const container = useRef(null);
-  const [columns, setColumns] = useState("col-2");
-  useEffect(() => {
-    setColumns("col-2");
-    const footermenu = container.current;
-    const { height } = location;
-    footermenu.style.left = `${height}px`;
-    console.log(footermenu);
-  }, [location, page]);
+const FooterSidebar = ({ title, name, id, label }) => {
+  const [showInfo, setShowInfo] = useState(false);
   return (
-    <aside
-      className={`${isFooterOpen ? "footermenu showup" : "footermenu"}`}
-      ref={container}
-    ></aside>
+    <article className="footer-header-show">
+      <header className="footer-each-info">
+        <h3 className="footer-title">{title}</h3>
+        <button
+          className="foo-btn"
+          onClick={() => setShowInfo(!showInfo)}
+          key={id}
+        >
+          {showInfo ? <ArrowUpwardIcon /> : <ArrowDownwardIcon />}
+        </button>
+      </header>
+
+      {showInfo && (
+        <p>
+          {name.map((i) => (
+            <button className={id === 20 ? "policy-mobile--btn" : "disabled"}>
+              {i.label}
+            </button>
+          ))}
+        </p>
+      )}
+    </article>
   );
+};
+
+FooterSidebar.ProtoTypes = {
+  title: PropTypes.string.isRequired,
+  label: PropTypes.any.isRequired,
+  id: PropTypes.any.isRequired,
+  name: PropTypes.object.isRequired,
 };
 
 export default FooterSidebar;
