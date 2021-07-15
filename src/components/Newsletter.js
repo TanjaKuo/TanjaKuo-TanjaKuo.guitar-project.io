@@ -9,7 +9,9 @@ const Newsletter = () => {
             <h3 className="newsletter-title">
               SIGN UP TO GET THE LATEST ON SALES AND EXCLUSIVE OFFERS!
             </h3>
-            <p>Sales, new releases, monthly deals, limited stock and more …</p>
+            <p className="newsletter-text">
+              Sales, new releases, monthly deals, limited stock and more …
+            </p>
             <input
               className="newsletter-input"
               type="text"
