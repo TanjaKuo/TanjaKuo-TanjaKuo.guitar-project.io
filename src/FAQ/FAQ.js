@@ -1,11 +1,15 @@
 import React from "react";
 import Newsletter from "../components/Newsletter";
+import { useGlobalContext } from "../context";
+
 import { faq } from "../subData";
 
 const FAQ = () => {
+  const { closeSubmenu } = useGlobalContext();
+
   return (
     <>
-      <section className="faq-hero">
+      <section className="faq-hero" onMouseOver={closeSubmenu}>
         <div className="hero-center">
           <article className="faq-info">
             <h2 className="faq-main-title">Frequency Answer Questions</h2>

@@ -151,8 +151,9 @@ Stripe Styles
   align-items: center;
   justify-content: center;
   background: transparent;
-  position: relative;
+  position: sticky;
   z-index: 1;
+  top: 0px;
 }
 .nav-center {
   width: 90vw;
@@ -163,11 +164,7 @@ Stripe Styles
   justify-content: space-between;
   align-items: center;
 }
-/* .nav-logo {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-} */
+
 .logo {
   padding: 10px;
   position: relative;
@@ -233,7 +230,6 @@ Stripe Styles
   top: 0;
   left: 0;
   background-color: var(--crl--blue);
-  /* background: url(./image/hero.svg); */
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -472,7 +468,7 @@ Stripe Styles
   }
 }
 
-/* links */
+/****************** SUBMENU links **********************/
 .submenu {
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);
@@ -680,7 +676,7 @@ https://github.com/foundation/motion-ui/blob/master/docs/animations.md
 https://zurb.com/playground/motion-ui
 */
 
-/* footer section */
+/******************8 footer section **********************/
 .footer {
   width: auto;
   margin: 5rem auto;
@@ -759,7 +755,7 @@ https://zurb.com/playground/motion-ui
   cursor: pointer;
   transition: var(--transition);
 }
-/* footer section  full-window*/
+/**************** footer section  full-window  *****************/
 
 @media screen and (min-width: 800px) {
   .footer {
@@ -831,7 +827,7 @@ https://zurb.com/playground/motion-ui
   }
 }
 
-/* FAQ */
+/************* FAQ ******************/
 .faq-hero::before {
   content: "";
   position: absolute;
@@ -867,7 +863,7 @@ https://zurb.com/playground/motion-ui
   color: var(--crl--blue);
 }
 
-/* newsletter section */
+/**************** newsletter section *****************/
 
 .newsletter-container {
   width: 90vw;

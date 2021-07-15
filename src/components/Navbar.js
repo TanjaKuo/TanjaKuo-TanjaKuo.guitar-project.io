@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
+  const [color, setColor] = useState("transparent");
+  const changeColor = (e) => {
+    if (window.scrollY > 20) {
+      setColor("rgba(29, 53, 87, 0.99)");
+    } else {
+      setColor("transparent");
+    }
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  }, window.removeEventListener("scroll", changeColor));
+
+  /*  add dynamic submenu height later 07.15 */
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
     const bottom = tempBtn.bottom - 3;
-    console.log(page);
-    console.log(tempBtn);
-    console.log(center);
-    console.log(bottom);
     openSubmenu(page, { center, bottom }); // {center, bottom} -> {coordinate}
   };
   const handleSubmenu = (e) => {
@@ -26,7 +34,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="nav" onMouseOver={handleSubmenu}>
+    <nav
+      className="nav"
+      name="nav"
+      onMouseOver={handleSubmenu}
+      style={{ background: color }}
+    >
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">

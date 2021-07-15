@@ -24,13 +24,9 @@ const useStyles = makeStyles({
 
 export default function Post() {
   const classes = useStyles();
-  //const container = useRef(null);
 
-  /* useEffect(() => {
-    const divContainer = container.current;
-  }, []); */
   return (
-    <div className="post-container" /* ref={container} */>
+    <div className="post-container">
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia

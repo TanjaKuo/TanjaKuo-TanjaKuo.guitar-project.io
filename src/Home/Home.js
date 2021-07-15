@@ -7,14 +7,7 @@ import GuitarItem from "./GuitarItem";
 import Post from "./Post";
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
-  /*  const scrollY = (e) => {
-    const postSection = e.target.scrollHeight;
-    const tempScroll = e.target.getBoundingClientRect();
-    //const heightSize =
-    console.log(postSection);
-    console.log(tempScroll);
-    alert(window.innerWidth); // full window width
-  }; */
+
   return (
     <>
       <section className="hero" onMouseOver={closeSubmenu}>
