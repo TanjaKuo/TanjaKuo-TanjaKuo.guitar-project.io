@@ -51,7 +51,7 @@ const Navbar = (props) => {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/product">
+            <Link to="/products">
               <button className="link-btn" onMouseOver={displaySubmenu}>
                 prodcuts
               </button>

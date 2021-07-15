@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Submenu from "./components/Submenu";
 import Footer from "./components/Footer";
 import Home from "./Home/Home";
-import Product from "./Product/Product";
+import Products from "./Product/Products";
 import Contact from "./Contact/Contact";
 import FAQ from "./FAQ/FAQ";
 import Error from "./Error/Error";
@@ -25,8 +25,8 @@ function App() {
         <Route exact path="/contact">
           <Contact />
         </Route>
-        <Route exact path="/product">
-          <Product />
+        <Route exact path="/products">
+          <Products />
         </Route>
         <Route exact path="/faq">
           <FAQ />
