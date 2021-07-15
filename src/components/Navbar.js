@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
@@ -27,26 +29,34 @@ const Navbar = () => {
     <nav className="nav" onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
-          <h3 className="logo">Mr.Guitar</h3>
+          <Link to="/">
+            <h3 className="logo">Mr.Guitar</h3>
+          </Link>
           <button className="btn toggle-btn" onClick={openSidebar}>
             <MenuIcon />
           </button>
         </div>
         <ul className="nav-links">
           <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              prodcuts
-            </button>
+            <Link to="/product">
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                prodcuts
+              </button>
+            </Link>
           </li>
           <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              contact
-            </button>
-          </li>{" "}
+            <Link to="/contact">
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                contact
+              </button>
+            </Link>
+          </li>
           <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              FAQ
-            </button>
+            <Link to="/faq">
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                FAQ
+              </button>
+            </Link>
           </li>
         </ul>
         <button className="link-btn cart-btn">
