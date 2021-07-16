@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { data } from "./subData";
+import guitarData from "./guitarData";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -7,6 +8,8 @@ const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
+  const [isShowYamaha, setIsShowYamaha] = useState(true);
+  const [brand, setBrand] = useState({ brand: "", image: {} });
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -24,6 +27,16 @@ const AppProvider = ({ children }) => {
     setIsSubmenuOpen(false);
   };
 
+  const showYamaha = (word, picture) => {
+    const brand = guitarData.find((each) => each.brand === word);
+    setBrand(brand);
+    setIsShowYamaha(true);
+  };
+
+  const noShowYamaha = () => {
+    setIsShowYamaha(false);
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -35,6 +48,9 @@ const AppProvider = ({ children }) => {
         closeSubmenu,
         location,
         page,
+        isShowYamaha,
+        showYamaha,
+        noshowYamaha,
       }}
     >
       {children}

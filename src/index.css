@@ -1035,6 +1035,34 @@ https://zurb.com/playground/motion-ui
   margin: 2rem;
 }
 
+.guitar-intro-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid purple;
+  text-align: center;
+}
+
+.guitar-intro-each:hover {
+  background-color: rosybrown;
+}
+
+.guitar-intro-each {
+  border: 2px solid red;
+}
+
+.guitar-intro-name {
+  font-size: medium;
+  color: #e5989b;
+}
+.guitar-intro-brand {
+  text-transform: uppercase;
+}
+
+.guitar-intro-pics {
+  width: 90%;
+  margin-bottom: 0.6rem;
+}
+
 @media screen and (min-width: 800px) {
   .products-page::before {
     height: 100%;
@@ -1044,8 +1072,13 @@ https://zurb.com/playground/motion-ui
     grid-template-columns: 1fr 2fr;
     align-items: center;
   }
-  .contact-form {
-    margin-bottom: -10rem;
+
+  .guitar-intro-products {
+    margin-top: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid purple;
+    text-align: center;
   }
 }
 
