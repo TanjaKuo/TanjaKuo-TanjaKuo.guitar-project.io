@@ -25,82 +25,82 @@ import fender10 from "./image/FENDER/Fender−Jim-Adkins-JA-90-Telecaster-Thinli
 const guitarData = [
   {
     id: "guitar1",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS320BS Electric Guitar - Black Steel",
     color: "Black",
-    price: 280,
+    price: "280",
     image: { url: yamaha1 },
   },
   {
     id: "guitar2",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS320RC Electric Guitar - Red Copper",
     color: "red",
-    price: 500,
+    price: "500",
     image: { url: yamaha2 },
   },
   {
     id: "guitar3",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha SA2200 Semi - Hollowbody Electric Guitar in Violin Sunburst",
     color: "brown",
-    price: 2750,
+    price: "2750",
     image: { url: yamaha3 },
   },
   {
     id: "guitar4",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS502TBG Electric Guitar - Bowden Green",
     color: "green",
-    price: 950,
+    price: "950",
     image: { url: yamaha4 },
   },
   {
     id: "guitar5",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Pacifica 611VFM Electric Translucent Black",
     color: "black",
-    price: 930, //$729
+    price: "930", //$729
     image: { url: yamaha5 },
   },
   {
     id: "guitar6",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS820CR Electric Guitar in Brushed Teal Blue",
     color: "",
-    price: 1320, //1175
+    price: "1320", //1175
     image: { url: yamaha6 },
   },
   {
     id: "guitar7",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS720B Electric Guitar with Bigsby in Vintage Japanese Denim",
     color: "blue",
-    price: 1020, //1139
+    price: "1020", //1139
     image: { url: yamaha7 },
   },
   {
     id: "guitar8",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS620 Electric Guitar - Snake Eye Green",
     color: "green",
-    price: 920, //889
+    price: "920", //889
     image: { url: yamaha8 },
   },
   {
     id: "guitar9",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS420FB Electric Guitar - Factory Blue",
     color: "blue",
-    price: 580, //629
+    price: "580", //629
     image: { url: yamaha9 },
   },
   {
     id: "guitar10",
-    brand: "yamaha",
+    brand: "Yamaha",
     name: "Yamaha Revstar RS420 Electric Guitar - Maya Gold",
     color: "brown",
-    price: 595,
+    price: "595",
     image: { url: yamaha10 },
   },
   /*  {
@@ -116,7 +116,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender Parallel Universe II Tele Mágico - Maple Fingerboard - Transparent Surf Green",
     color: "green",
-    price: 3999,
+    price: "3999",
     image: { url: fender1 },
   },
   {
@@ -124,7 +124,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender American Original '50s Stratocaster with Maple in White Blonde",
     color: "white",
-    price: 3100,
+    price: "3100",
     image: { url: fender2 },
   },
   {
@@ -132,7 +132,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender American Acoustasonic Jazzmaster, Ocean Turquoise, Ebony Fingerboard",
     color: "green",
-    price: 3000,
+    price: "3000",
     image: { url: fender3 },
   },
   {
@@ -140,7 +140,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender Parallel Universe Volume II Uptown Strat - Rosewood Fingerboard - Static White",
     color: "white",
-    price: 2500,
+    price: "2500",
     image: { url: fender4 },
   },
   {
@@ -148,7 +148,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender Boxer Series Telecaster HH with Rosewood Fingerboard in Torino Red",
     color: "red",
-    price: 2399,
+    price: "2399",
     image: { url: fender5 },
   },
   {
@@ -156,15 +156,15 @@ const guitarData = [
     brand: "fender",
     name: "Fender Chrissie Hynde Telecaster, Rosewood Fingerboard, Ice Blue Metallic",
     color: "blue",
-    price: 2050,
+    price: "2050",
     image: { url: fender6 },
   },
   {
     id: "guitar106",
-    brand: "fender",
+    brand: "Fender",
     name: "Fender vintera '50S Telecaster electric guitar",
     color: "yellow",
-    price: 890,
+    price: "890",
     image: { url: fender7 },
   },
   {
@@ -172,7 +172,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender American Performer Telecaster Hum in Vintage White",
     color: "yellow",
-    price: 2015,
+    price: "2015",
     image: { url: fender8 },
   },
   {
@@ -180,7 +180,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender − Special Edition Custom Telecaster FMT HH, Laurel Fingerboard, Amber",
     color: "brown",
-    price: 999,
+    price: "999",
     image: { url: fender9 },
   },
   {
@@ -188,7 +188,7 @@ const guitarData = [
     brand: "fender",
     name: "Fender − Jim Adkins JA-90 Telecaster Thinline, Laurel Fingerboard, Crimson Red Transparent",
     color: "red",
-    price: 1210,
+    price: "1210",
     image: { url: fender10 },
   } /*  {
     id: "guitar110",

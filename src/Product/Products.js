@@ -1,14 +1,46 @@
 import React, { useState } from "react";
 import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
-import guitarData from "../guitarData";
+import { guitarImg } from "../subData";
+//import GuitarList from "./GuitarList";
+import guitarData from "./GuitarList";
+import SearchBox from "./SearchBox";
+import SingleGuitar from "./SingleGuitar";
+import Guitar from "./Guitar";
 
 const Products = () => {
-  const { closeSubmenu, showYamaha } = useGlobalContext();
-  //const [yamaha, setYamaha] = useState(true);
+  const { closeSubmenu, showYamaha, openGuitar, openBrand } =
+    useGlobalContext();
+  const [searchField, setsetSearchField] = useState("");
+  const [showBrand, setShowBrand] = useState({
+    id: "",
+    brand: "",
+    color: "",
+    price: "",
+    name: "",
+    image: {},
+  });
+
+  /* brand match */
   const displayGuitarBrand = (e) => {
-    const brands = e.target.textContent;
-    showYamaha(brands); // {center, bottom} -> {coordinate}
+    const brandName = e.target.textContent;
+    const brand = guitarData.map((each) => each.brand == brandName);
+    setShowBrand(brand);
+
+    //console.log(brandName);
+  };
+
+  /* const displaySubmenu = (e) => {
+    const page = e.target.textContent;
+    const tempBtn = e.target.getBoundingClientRect();
+    const center = (tempBtn.left + tempBtn.right) / 2;
+    const bottom = tempBtn.bottom - 3;
+    openSubmenu(page, { center, bottom }); // {center, bottom} -> {coordinate}
+  }; */
+
+  const onSearchChange = (e) => {
+    setsetSearchField(e.target.value);
+    console.log(onSearchChange);
   };
 
   return (
@@ -16,52 +48,25 @@ const Products = () => {
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="hero-center products">
           <article className="hero-info contact-info">
-            <div class="guitar-category">
+            <div className="guitar-category">
               <div className="guitar-brand">
+                <SearchBox searchChange={onSearchChange} />
+                {/*    <input
+                  className=""
+                  type="search"
+                  placeholder="search guitar"
+                  onChange={onSearchChange}
+                /> */}
                 <h4>Brand</h4>
-                <button onClick={() => alert("yahama is here")}>Yamaha</button>
-                <button>Fender</button>
+                <button onClick={displayGuitarBrand}>Yamaha</button>
+                <button onClick={displayGuitarBrand}>Fender</button>
               </div>
               <div className="guitar-color">
                 <h4>Color</h4>
               </div>
             </div>
           </article>
-          <article className="contact-section">
-            <div className="guitar-intro-products">
-              {guitarData.map((guitar) => {
-                const { id, brand, name, color, price, image } = guitar;
-                return (
-                  <div key={id} className="guitar-intro-each">
-                    <img
-                      src={image.url}
-                      alt={name}
-                      className="guitar-intro-pics"
-                    />
-                    <h4 className="guitar-intro-name">{name}</h4>
-                    <p className="guitar-intro-brand">{brand}</p>
-                    <p>${price} AUD</p>
-                  </div>
-                );
-              })}
-            </div>
-          </article>
-        </div>
-        <div>
-          {/*  {guitarData.map((guitar) => {
-            const { id, brand, name, color, price, image } = guitar;
-            return (
-              <div key={id}>
-                <h4>{name}</h4>
-                <p>{brand}</p>
-                <img src={image.url} alt={name} />
-                <p>
-                  {price}
-                  {color}
-                </p>
-              </div>
-            );
-          })} */}
+          <Guitar />
         </div>
       </section>
       <Newsletter className="new" />
