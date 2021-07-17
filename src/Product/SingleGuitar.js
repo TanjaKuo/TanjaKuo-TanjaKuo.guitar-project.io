@@ -1,5 +1,5 @@
 import React from "react";
-import guitarData from "../guitarData";
+//import guitarData from "../guitarData";
 
 const SingleGuitar = () => {
   //const [id, name, brand, color, image, price] = props;

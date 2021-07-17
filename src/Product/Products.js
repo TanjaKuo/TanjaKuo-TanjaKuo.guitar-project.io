@@ -3,10 +3,11 @@ import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
 import { guitarImg } from "../subData";
 //import GuitarList from "./GuitarList";
-import guitarData from "./GuitarList";
+import guitarData from "../guitarData";
 import SearchBox from "./SearchBox";
 import SingleGuitar from "./SingleGuitar";
 import Guitar from "./Guitar";
+import Button from "./Button";
 
 const Products = () => {
   const { closeSubmenu, showYamaha, openGuitar, openBrand } =
@@ -21,22 +22,16 @@ const Products = () => {
     image: {},
   });
 
+  const [data, setData] = useState(guitarData);
+  const [buttons, setButtons] = useState([]);
   /* brand match */
-  const displayGuitarBrand = (e) => {
-    const brandName = e.target.textContent;
-    const brand = guitarData.map((each) => each.brand == brandName);
-    setShowBrand(brand);
-
-    //console.log(brandName);
+  const filter = (e) => {
+    const guitarBrand = e.target.textContent;
+    const brandName = guitarData.filter(
+      (e) => e.brand.toLowerCase() === guitarBrand.toLowerCase()
+    );
+    setData(brandName); // super important ****** without it, will not run
   };
-
-  /* const displaySubmenu = (e) => {
-    const page = e.target.textContent;
-    const tempBtn = e.target.getBoundingClientRect();
-    const center = (tempBtn.left + tempBtn.right) / 2;
-    const bottom = tempBtn.bottom - 3;
-    openSubmenu(page, { center, bottom }); // {center, bottom} -> {coordinate}
-  }; */
 
   const onSearchChange = (e) => {
     setsetSearchField(e.target.value);
@@ -58,15 +53,16 @@ const Products = () => {
                   onChange={onSearchChange}
                 /> */}
                 <h4>Brand</h4>
-                <button onClick={displayGuitarBrand}>Yamaha</button>
-                <button onClick={displayGuitarBrand}>Fender</button>
+
+                <button onClick={filter}>Yamaha</button>
+                <button onClick={filter}>Fender</button>
               </div>
               <div className="guitar-color">
                 <h4>Color</h4>
               </div>
             </div>
           </article>
-          <Guitar />
+          <Guitar data={data} />
         </div>
       </section>
       <Newsletter className="new" />

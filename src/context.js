@@ -19,6 +19,8 @@ const AppProvider = ({ children }) => {
     image: {},
   });
 
+  const [menu, setMenu] = useState(guitarData);
+
   const openSidebar = () => {
     setIsSidebarOpen(true);
   };
@@ -35,11 +37,11 @@ const AppProvider = ({ children }) => {
     setIsSubmenuOpen(false);
   };
 
-  /*   const openBrand = () => {
-    const brand = guitarData.map((each) => each.brand == "Yamaha");
-    setShowBrand(brand);
+  const openBrand = (word) => {
+    const brand = guitarData.filter((each) => each.brand === word);
+    setMenu(brand);
     setIsshowBrand(true);
-  }; */
+  };
 
   return (
     <AppContext.Provider
@@ -54,7 +56,7 @@ const AppProvider = ({ children }) => {
         page,
         showBrand,
         isShowBrand,
-        //openBrand,
+        openBrand,
       }}
     >
       {children}
