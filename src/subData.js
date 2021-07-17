@@ -24,10 +24,10 @@ export const data = [
   {
     page: "prodcuts",
     links: [
-      { label: "70's guitar", icon: <ArrowForwardIcon />, url: "./products" },
-      { label: "gibson", icon: <ArrowForwardIcon />, url: "./products" },
-      { label: "fender", icon: <ArrowForwardIcon />, url: "./products" },
-      { label: "yamaha", icon: <ArrowForwardIcon />, url: "./products" },
+      /*  { label: "70's guitar", icon: <ArrowForwardIcon />, url: "./products" }, */
+      { label: "GIBSON", icon: <ArrowForwardIcon />, url: "./products" },
+      { label: "FENDER", icon: <ArrowForwardIcon />, url: "./products" },
+      { label: "YAMAHA", icon: <ArrowForwardIcon />, url: "./products" },
     ],
   },
   {

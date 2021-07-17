@@ -22,8 +22,8 @@ const Guitar = ({ data }) => {
                     className="guitar-intro-pics"
                   />
                   <h4 className="guitar-intro-name">{one.name}</h4>
-                  <p className="guitar-intro-brand">{one.brand}</p>
-                  <p>${one.price} AUD</p>
+                  {/*   <p className="guitar-intro-brand">{one.brand}</p> */}
+                  <p className="guitar-intro-price">$ {one.price} AUD</p>
                 </div>
               </>
             );

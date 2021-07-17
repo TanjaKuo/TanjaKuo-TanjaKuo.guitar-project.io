@@ -7,6 +7,7 @@ const SearchBox = ({ searchField, searchChange }) => {
         type="search"
         placeholder="search guitar"
         onChange={searchChange}
+        className="search-box"
       />
     </>
   );

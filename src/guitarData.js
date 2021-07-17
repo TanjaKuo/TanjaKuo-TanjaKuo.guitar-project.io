@@ -21,8 +21,106 @@ import fender8 from "./image/FENDER/Fender-America-Performer-Telecaster-Hum.png"
 import fender9 from "./image/FENDER/Fender-Special-Edition-Custom-Telecaster-FMT-HH.png";
 import fender10 from "./image/FENDER/Fender−Jim-Adkins-JA-90-Telecaster-Thinline.png";
 /* import fender11 from "./image/FENDER/"; */
+import gibson1 from "./image/GIBSON/Gibson-Orianthi-SJ200.png";
+import gibson2 from "./image/GIBSON/Gibson-ES335-Hollowbody.png";
+import gibson3 from "./image/GIBSON/Gibson-1957-SJ200.png";
+import gibson4 from "./image/GIBSON/Gibson-Kirk-Douglas.png";
+import gibson5 from "./image/GIBSON/Gibson-Murphy-Labs-61-ES335.png";
+import gibson6 from "./image/GIBSON/Gibson-Murphy-Labs-64.png";
+import gibson7 from "./image/GIBSON/Gibson-Murphy-Labs-63.png";
+import gibson8 from "./image/GIBSON/Gibson-Murphy-57.png";
+import gibson9 from "./image/GIBSON/Gibson-Murphy-64.png";
+import gibson10 from "./image/GIBSON/Gibson-ES-345.png";
 
 const guitarData = [
+  {
+    id: "guitar50",
+    brand: "gibson",
+    name: "Gibson Orianthi SJ200 Acoustic Guitar In Cherry",
+    color: "red",
+    price: "11200",
+    image: { url: gibson1 },
+  },
+  {
+    id: "guitar51",
+    brand: "gibson",
+    name: "Gibson ES335 Hollowbody Electric Guitar in Satin Vintage Natural",
+    color: "yellow",
+    price: "4100",
+    image: { url: gibson2 },
+  },
+  {
+    id: "guitar52",
+    brand: "gibson",
+    name: "Gibson 1957 SJ200 Acoustic Guitar in Antique Natural",
+    color: "brown",
+    price: "10100",
+    image: { url: gibson3 },
+  },
+  {
+    id: "guitar53",
+    brand: "gibson",
+    name: "Gibson Kirk Douglas SG Electric Guitar In Ebony",
+    color: "black",
+    price: "4755",
+    image: { url: gibson4 },
+  },
+  {
+    id: "guitar54",
+    brand: "gibson",
+    name: "Gibson Murphy Labs 61 ES335 Ultra Light Aged Electric Guitar In 60's Cherry",
+    color: "red",
+    price: "9998",
+    image: { url: gibson5 },
+  },
+  {
+    id: "guitar55",
+    brand: "gibson",
+    name: "Gibson Murphy Labs 64 Trini Lopez Standard Ultra LIght Electric Guitar In Aged Ebony",
+    color: "black",
+    price: "11900",
+    image: { url: gibson6 },
+  },
+  {
+    id: "guitar56",
+    brand: "gibson",
+    name: "Gibson Murphy Labs 63 Firebird Ultra Light Aged Electric Guitar In Pelham Blue",
+    color: "blue",
+    price: "9800",
+    image: { url: gibson7 },
+  },
+  {
+    id: "guitar57",
+    brand: "gibson",
+    name: "Gibson Murphy 57 Les Paul Goldtop Electric Guitar Ultra Light Aged",
+    color: "gold",
+    price: "8590",
+    image: { url: gibson8 },
+  },
+  {
+    id: "guitar58",
+    brand: "gibson",
+    name: "Gibson Murphy 64 SG Std Maestro Ultra Light in Aged Red",
+    color: "red",
+    price: "8400",
+    image: { url: gibson9 },
+  },
+  {
+    id: "guitar59",
+    brand: "gibson",
+    name: "Gibson ES-345 Vintage Burst Electric Guitar",
+    color: "brown",
+    price: "5600",
+    image: { url: gibson10 },
+  },
+  /* {
+    id: "guitar50",
+    brand: "gibson",
+    name: "",
+    color: "",
+    price: "",
+    image: { url: gibson1 },
+  }, */
   {
     id: "guitar1",
     brand: "Yamaha",
@@ -196,28 +294,7 @@ const guitarData = [
     name: "",
     color: "",
     price: ,
-    url: { fender4 },
-  }, {
-    id: "guitar103",
-    brand: "",
-    name: "Gibson Custom Shop Les Paul Standard Black over Gold Aged Limited Edition Electric Guitar",
-    color: "",
-    price: ,
-    url: { fender4 },
-  }, {
-    id: "guitar103",
-    brand: "fender",
-    name: "",
-    color: "",
-    price: ,
-    url: { fender4 },
-  }, {
-    id: "guitar103",
-    brand: "fender",
-    name: "",
-    color: "",
-    price: ,
-    url: { fender4 },
+    image: {url: fender4 },
   }, */,
   ,
 ];

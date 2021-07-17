@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { useGlobalContext } from "../context";
 import hero from "../image/hero3.png";
 // Components
@@ -19,7 +21,9 @@ const Home = () => {
               500s—use Stripe’s software and APIs to accept payments, send
               payouts, and manage their businesses online.
             </p>
-            <button className="buy-btn">Buy one now</button>{" "}
+            <Link to="./products">
+              <button className="buy-btn">Buy one now</button>{" "}
+            </Link>
           </article>
           <article className="hero-images stand-up">
             <img src={hero} alt="hero" />

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import FooterSidebar from "./FooterSidebar";
 import { footerInfo } from "../subData";
 
@@ -16,12 +18,24 @@ const Navbar = () => {
           <div className="footer-content">
             <ul className="footer-link">
               <li className="policy-links">
-                <button className="policy-btn ">Shipping Policy</button>
-                <button className="policy-btn">Refund Policy</button>
-                <button className="policy-btn">Privacy Policy</button>
-                <button className="policy-btn">Term of Service</button>
-                <button className="policy-btn">Click and Collect</button>
-                <button className="policy-btn">Covid-19 Policy</button>
+                <Link to="./shipping-policy">
+                  <button className="policy-btn ">Shipping Policy</button>
+                </Link>
+                <Link to="./return-policy">
+                  <button className="policy-btn">Return Policy</button>
+                </Link>
+                <Link to="./private-policy">
+                  <button className="policy-btn">Privacy Policy</button>
+                </Link>
+                <Link to="./working">
+                  <button className="policy-btn">Term of Service</button>
+                </Link>
+                <Link to="./working">
+                  <button className="policy-btn">Click and Collect</button>
+                </Link>
+                <Link to="./working">
+                  <button className="policy-btn">Covid-19 Policy</button>
+                </Link>
               </li>
             </ul>
           </div>

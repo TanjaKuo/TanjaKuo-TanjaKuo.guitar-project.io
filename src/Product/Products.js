@@ -7,7 +7,6 @@ import guitarData from "../guitarData";
 import SearchBox from "./SearchBox";
 import SingleGuitar from "./SingleGuitar";
 import Guitar from "./Guitar";
-import Button from "./Button";
 
 const Products = () => {
   const { closeSubmenu, showYamaha, openGuitar, openBrand } =
@@ -42,23 +41,35 @@ const Products = () => {
     <>
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="hero-center products">
-          <article className="hero-info contact-info">
+          <article className="hero-info guitar-info">
             <div className="guitar-category">
               <div className="guitar-brand">
                 <SearchBox searchChange={onSearchChange} />
-                {/*    <input
-                  className=""
-                  type="search"
-                  placeholder="search guitar"
-                  onChange={onSearchChange}
-                /> */}
-                <h4>Brand</h4>
-
-                <button onClick={filter}>Yamaha</button>
-                <button onClick={filter}>Fender</button>
-              </div>
-              <div className="guitar-color">
-                <h4>Color</h4>
+                <h4 className="category">Brand</h4>
+                <div className="category-btns">
+                  <button className="category-btn" onClick={filter}>
+                    Yamaha
+                  </button>
+                  <button className="category-btn" onClick={filter}>
+                    Fender
+                  </button>
+                  <button className="category-btn" onClick={filter}>
+                    Gibson
+                  </button>
+                  <br />
+                  <h4 className="category">Color</h4>
+                  <div className="category-btns">
+                    <button className="category-btn" onClick={filter}>
+                      Yamaha
+                    </button>
+                    <button className="category-btn" onClick={filter}>
+                      Fender
+                    </button>
+                    <button className="category-btn" onClick={filter}>
+                      Gibson
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </article>
