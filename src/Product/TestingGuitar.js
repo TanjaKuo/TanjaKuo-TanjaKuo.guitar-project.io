@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+
 import { useGlobalContext } from "../context";
 import guitarData from "../guitarData";
 
@@ -25,8 +27,8 @@ const TestingGuitar = ({ data }) => {
                     className="guitar-intro-pics"
                   />
                   <h4 className="guitar-intro-name">{one.name}</h4>
-                  {/*   <p className="guitar-intro-brand">{one.brand}</p> */}
                   <p className="guitar-intro-price">$ {one.price} AUD</p>
+                  <Link to={`/products/${one.id}`}>more</Link>
                 </div>
               </>
             );

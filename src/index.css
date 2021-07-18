@@ -1146,6 +1146,18 @@ https://zurb.com/playground/motion-ui
   color: var(--clr-whitish);
 }
 
+.guitar-intro-btn {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: transparent;
+  color: var(--clr-whitish);
+  align-content: center;
+  font-size: large;
+  cursor: pointer;
+}
+
 .pination-ul {
   display: flex;
   flex-direction: row;
@@ -1230,4 +1242,83 @@ https://zurb.com/playground/motion-ui
   padding-top: 1.5rem;
   padding-left: 2rem;
   font-size: large;
+}
+
+/* ****************** Single Guitar Page ************/
+.single-guitar-hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 330vh;
+  top: 0;
+  left: 0;
+  background-color: var(--crl--blue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.single-guitar-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.single-guitar-center {
+  width: 90vw;
+  max-width: var(--max-width);
+  display: grid;
+  align-items: center;
+  margin-top: 5rem;
+  color: var(--clr-whitish);
+}
+
+.single-guitar-info {
+  margin-top: 5rem;
+  padding-right: 1.5rem;
+  padding-left: 0.8rem;
+}
+.single-guitar-info > p {
+  font-size: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+}
+.single-guitar-btn {
+  padding: 1rem;
+  background: transparent;
+  color: var(--clr-whitish);
+  align-content: center;
+  font-size: large;
+}
+@media screen and (min-width: 800px) {
+  .single-guitar-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .single-guitar-title {
+    margin: 2rem;
+    text-align: center;
+  }
+  /*   .single-guitar-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
+}
+/* ****************** Blog ************/
+.blog {
+  width: 90vw;
+  max-width: var(--max-width);
+  display: grid;
+  align-items: center;
+}
+
+.blog-title {
+  color: var(--clr-red);
+}
+
+.blog-li {
+  color: var(--clr-grey-5);
+  margin-bottom: 1.2rem;
 }

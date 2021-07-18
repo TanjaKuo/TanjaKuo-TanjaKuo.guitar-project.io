@@ -9,9 +9,12 @@ import PrivatePolicy from "./components/PrivatePolicy";
 
 import Home from "./Home/Home";
 import Products from "./Product/Products";
+import SingleGuitar from "./Product/SingleGuitar";
 import Contact from "./Contact/Contact";
 import FAQ from "./FAQ/FAQ";
 import Error from "./Error/Error";
+import MexicanFender from "./Blog/MexicanFender";
+import FenderUSA from "./Blog/FenderUSA";
 
 /* testing */
 import TestingProducts from "./Product/TestingProducts";
@@ -35,6 +38,7 @@ function App() {
         <Route exact path="/products">
           <Products />
         </Route>
+        <Route path="/products/:id" children={<SingleGuitar />}></Route>
         <Route exact path="/faq">
           <FAQ />
         </Route>
@@ -49,6 +53,12 @@ function App() {
         </Route>
         <Route exact path="/testing">
           <TestingProducts />
+        </Route>
+        <Route exact path="/blog/mexican-fender">
+          <MexicanFender />
+        </Route>
+        <Route exact path="/blog/fender-usa52">
+          <FenderUSA />
         </Route>
         <Route exact path="*">
           <Error />

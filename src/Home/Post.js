@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
+import { Link } from "react-router-dom";
+
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -55,9 +57,11 @@ export default function Post() {
           <Button size="small" color="primary">
             Share
           </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+          <Link to="/blog/mexican-fender">
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </Link>
         </CardActions>
       </Card>
       <Card className={classes.root}>
@@ -82,9 +86,11 @@ export default function Post() {
           <Button size="small" color="primary">
             Share
           </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
+          <Link to="/blog/fender-usa52">
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </Link>
         </CardActions>
       </Card>
       <Card className={classes.root}>
