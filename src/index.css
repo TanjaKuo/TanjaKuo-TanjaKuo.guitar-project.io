@@ -291,6 +291,7 @@ Stripe Styles
 }
 .hero-images {
   display: none;
+  margin-top: 1.5rem;
 }
 
 /* nav media query */
@@ -654,9 +655,32 @@ https://stackoverflow.com/questions/19213712/my-website-mess-up-with-browser-res
 */
 
 .stand-up {
-  animation-name: guitar-stand-up;
+  animation-name: example;
+  position: relative;
+  animation-duration: 4s;
 }
-
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
 @keyframes guitar-stand-up {
   0% {
     transform: hange(in, left, edge, 20000px, null);
@@ -1097,6 +1121,21 @@ https://zurb.com/playground/motion-ui
   color: var(--clr-whitish);
 }
 
+.pination-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pination-li {
+  color: #e5989b;
+  border: 2px solid green;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1.3rem;
+}
+
 @media screen and (min-width: 800px) {
   .products-page::before {
     height: 100%;
@@ -1113,6 +1152,10 @@ https://zurb.com/playground/motion-ui
     grid-template-columns: 1fr 1fr 1fr;
     border: 2px solid purple;
     text-align: center;
+  }
+  .pination-nav {
+    margin-left: 23rem;
+    margin-top: -2rem;
   }
 }
 

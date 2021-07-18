@@ -13,6 +13,9 @@ import Contact from "./Contact/Contact";
 import FAQ from "./FAQ/FAQ";
 import Error from "./Error/Error";
 
+/* testing */
+import TestingProducts from "./Product/TestingProducts";
+
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -43,6 +46,9 @@ function App() {
         </Route>
         <Route exact path="/private-policy">
           <PrivatePolicy />
+        </Route>
+        <Route exact path="/testing">
+          <TestingProducts />
         </Route>
         <Route exact path="*">
           <Error />
