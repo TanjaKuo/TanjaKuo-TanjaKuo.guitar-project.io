@@ -20,6 +20,8 @@ import fender7 from "./image/FENDER/Fender-vintera-50S-Telecaster.png";
 import fender8 from "./image/FENDER/Fender-America-Performer-Telecaster-Hum.png";
 import fender9 from "./image/FENDER/Fender-Special-Edition-Custom-Telecaster-FMT-HH.png";
 import fender10 from "./image/FENDER/Fender−Jim-Adkins-JA-90-Telecaster-Thinline.png";
+import fender11 from "./image/FENDER/Fender-Made-in-Japan-Traditional-50s-Telecaster.png"; //!!!
+
 /* import fender11 from "./image/FENDER/"; */
 import gibson1 from "./image/GIBSON/Gibson-Orianthi-SJ200.png";
 import gibson2 from "./image/GIBSON/Gibson-ES335-Hollowbody.png";
@@ -288,6 +290,14 @@ const guitarData = [
     color: "red",
     price: "1210",
     image: { url: fender10 },
+  },
+  {
+    id: "guitar110",
+    brand: "fender",
+    name: "Fender Made in Japan Traditional 50s Telecaster",
+    color: "yellow",
+    price: "1150",
+    image: { url: fender11 },
   } /*  {
     id: "guitar110",
     brand: "fender",

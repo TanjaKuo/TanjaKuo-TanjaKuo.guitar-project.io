@@ -125,10 +125,18 @@ const Products = () => {
   const [buttons, setButtons] = useState([]);
   console.log(data);
   /* brand match */
-  const filter = (e) => {
+  const filterBrand = (e) => {
     const guitarBrand = e.target.textContent;
     const brandName = guitarData.filter(
       (e) => e.brand.toLowerCase() === guitarBrand.toLowerCase()
+    );
+    setData(brandName); // super important ****** without it, will not run
+  };
+  /* color match */
+  const filterColor = (e) => {
+    const guitarBrand = e.target.textContent;
+    const brandName = guitarData.filter(
+      (e) => e.color.toLowerCase() === guitarBrand.toLowerCase()
     );
     setData(brandName); // super important ****** without it, will not run
   };
@@ -148,26 +156,53 @@ const Products = () => {
                 <SearchBox searchChange={onSearchChange} />
                 <h4 className="category">Brand</h4>
                 <div className="category-btns">
-                  <button className="category-btn" onClick={filter}>
+                  <button className="category-btn" onClick={filterBrand}>
                     Yamaha
                   </button>
-                  <button className="category-btn" onClick={filter}>
+                  <button className="category-btn" onClick={filterBrand}>
                     Fender
                   </button>
-                  <button className="category-btn" onClick={filter}>
+                  <button className="category-btn" onClick={filterBrand}>
                     Gibson
                   </button>
                   <br />
                   <h4 className="category">Color</h4>
-                  <div className="category-btns">
-                    <button className="category-btn" onClick={filter}>
-                      Yamaha
+                  <div className="category-btns-color">
+                    <button
+                      className="category-btn-color"
+                      onClick={filterColor}
+                    >
+                      Red
                     </button>
-                    <button className="category-btn" onClick={filter}>
-                      Fender
+                    <button
+                      className="category-btn-color "
+                      onClick={filterColor}
+                    >
+                      Black
                     </button>
-                    <button className="category-btn" onClick={filter}>
-                      Gibson
+                    <button
+                      className="category-btn-color"
+                      onClick={filterColor}
+                    >
+                      Green
+                    </button>
+                    <button
+                      className="category-btn-color"
+                      onClick={filterColor}
+                    >
+                      Yellow
+                    </button>
+                    <button
+                      className="category-btn-color"
+                      onClick={filterColor}
+                    >
+                      Brown
+                    </button>
+                    <button
+                      className="category-btn-color"
+                      onClick={filterColor}
+                    >
+                      White
                     </button>
                   </div>
                 </div>
