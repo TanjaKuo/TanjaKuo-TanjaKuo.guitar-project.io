@@ -24,7 +24,7 @@ const Navbar = () => {
                 <Link to="./return-policy">
                   <button className="policy-btn">Return Policy</button>
                 </Link>
-                <Link to="./private-policy">
+                <Link to="./privacy-policy">
                   <button className="policy-btn">Privacy Policy</button>
                 </Link>
                 <Link to="./working">

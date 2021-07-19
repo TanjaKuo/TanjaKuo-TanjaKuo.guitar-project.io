@@ -33,7 +33,7 @@ export const shippingPolicy = [
   },
 ];
 
-export const privatePolicy = [
+export const privacyPolicy = [
   {
     id: 33,
     title: "PRIVACY POLICY",

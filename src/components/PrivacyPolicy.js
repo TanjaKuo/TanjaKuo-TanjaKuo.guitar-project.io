@@ -1,6 +1,6 @@
 import React from "react";
-import { privatePolicy } from "../policyData";
-import Newsletter from "../components/Newsletter";
+import { privacyPolicy } from "../policyData";
+import Newsletter from "./Newsletter";
 import { useGlobalContext } from "../context";
 
 const PrivatePolicy = () => {
@@ -12,7 +12,7 @@ const PrivatePolicy = () => {
         <div className="hero-center">
           <article className="faq-info">
             <h2 className="faq-main-title">Private Policy</h2>
-            {privatePolicy.map((returnInfo) => {
+            {privacyPolicy.map((returnInfo) => {
               const { id, title, des } = returnInfo;
               return (
                 <>

@@ -9,12 +9,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import blog1 from "../image/Blog/blog1.png";
-import blog2 from "../image/Blog/blog2.png";
-import blog3 from "../image/Blog/blog3.png";
-import blog4 from "../image/Blog/blog4.png";
-import blog5 from "../image/Blog/blog5.png";
-import blog6 from "../image/Blog/blog6.png";
+
+import postData from "../postData";
 
 const useStyles = makeStyles({
   root: {
@@ -35,36 +31,40 @@ export default function Post() {
 
   return (
     <div className="post-container">
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={blog1}
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Mexican Fender / Squier Strats: The Mid 1990s Boom
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              After a pretty grim start, Fender’s Mexican guitar production
-              initially remained somewhat muted within the overall range on the
-              UK market.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Link to="/blog/mexican-fender">
-            <Button size="small" color="primary">
-              Learn More
-            </Button>
-          </Link>
-        </CardActions>
-      </Card>
-      <Card className={classes.root}>
+      {postData.map((post) => {
+        const { id, title, des, url, img } = post;
+        return (
+          <Card className={classes.root} key={id}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={img.url}
+                title="Contemplative Reptile"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {title}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  {des}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary">
+                Share
+              </Button>
+              <Link to={url}>
+                <Button size="small" color="primary">
+                  Learn More
+                </Button>
+              </Link>
+            </CardActions>
+          </Card>
+        );
+      })}
+
+      {/* <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -145,7 +145,7 @@ export default function Post() {
             Learn More
           </Button>
         </CardActions>
-      </Card>
+      </Card> */}
     </div>
   );
 }

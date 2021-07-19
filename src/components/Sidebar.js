@@ -24,7 +24,7 @@ const Sidebar = () => {
             const { page, links } = item;
             return (
               <article key={index}>
-                <h3>{page}</h3>
+                <h3 className="sidebar-title">{page}</h3>
                 <div className="sidebar-sublinks">
                   {links.map((link, index) => {
                     const { label, icon, url } = link;

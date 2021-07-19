@@ -2,7 +2,7 @@ import React from "react";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import MessageIcon from "@material-ui/icons/Message";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import FavoriteIcon from "@material-ui/icons/Favorite";
+import BookIcon from "@material-ui/icons/Book";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
 // banner img
 import banner1 from "./image/banner1.png";
@@ -24,23 +24,25 @@ export const data = [
   {
     page: "prodcuts",
     links: [
-      /*  { label: "70's guitar", icon: <ArrowForwardIcon />, url: "./products" }, */
       { label: "GIBSON", icon: <ArrowForwardIcon />, url: "./products" },
       { label: "FENDER", icon: <ArrowForwardIcon />, url: "./products" },
       { label: "YAMAHA", icon: <ArrowForwardIcon />, url: "./products" },
     ],
   },
   {
+    page: "blog",
+    links: [{ label: "blog", icon: <BookIcon />, url: "./blog" }],
+  },
+  {
     page: "contact",
-    links: [
-      { label: "online consult", icon: <MessageIcon />, url: "./contact" },
-    ],
+    links: [{ label: "Contact Us", icon: <MessageIcon />, url: "./contact" }],
   },
   {
     page: "cart",
     links: [
       { label: "cart", icon: <ShoppingCartIcon />, url: "./cart" },
-      { label: "wishlist", icon: <FavoriteIcon />, url: "./cart" },
+      /*       { label: "wishlist", icon: <FavoriteIcon />, url: "./cart" },
+       */
     ],
   },
   {
@@ -146,12 +148,12 @@ export const footerInfo = [
     id: 20,
     title: "policy",
     name: [
-      { label: "Shipping policy" },
-      { label: "Refund policy" },
-      { label: "Privacy policy" },
-      { label: "Term of Service" },
-      { label: "Click and Collect" },
-      { label: "Covid-19 policy" },
+      { label: "Shipping policy", url: "./shipping-policy" },
+      { label: "Return policy", url: "./return-policy" },
+      { label: "Privacy policy", url: "./privacy-policy" },
+      { label: "Term of Service", url: "./term-of-service" },
+      { label: "Click and Collect", url: "./click-of-collect" },
+      { label: "Covid-19 policy", url: "./covid19-policy" },
     ],
   },
   {

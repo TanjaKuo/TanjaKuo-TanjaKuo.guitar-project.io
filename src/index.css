@@ -175,6 +175,7 @@ Stripe Styles
 .side-logo {
   padding: 10px;
   margin-right: 200px;
+  margin-top: -1rem;
   position: relative;
   color: var(--clr-whitish);
   border: 2px solid var(--clr-red);
@@ -311,7 +312,7 @@ Stripe Styles
     display: block;
     justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     height: 100%;
     display: grid;
@@ -420,6 +421,7 @@ Stripe Styles
   position: relative;
   padding: 4rem 2rem;
 }
+
 .close-btn {
   font-size: 2rem;
   background: transparent;
@@ -434,6 +436,14 @@ Stripe Styles
   margin-bottom: 2rem;
 }
 
+.sidebar-title {
+  color: var(--clr-whitish);
+}
+
+.sidebar-links {
+  margin-top: 1.5rem;
+}
+
 .sidebar-sublinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -441,13 +451,14 @@ Stripe Styles
 }
 .sidebar-btn {
   padding: 10px;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  /* background-color: rgba(46, 138, 181, 0.3); */
   box-shadow: rgba(69, 123, 157, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 0;
   border-radius: 15px;
-  margin-right: 5px;
+  margin-right: 0.1rem;
 }
 .sidebar-sublinks a {
   display: block;
@@ -459,7 +470,7 @@ Stripe Styles
   font-size: 20px;
 }
 .sidebar-sublinks svg {
-  color: rgb(241, 250, 238);
+  color: var(--crl--blue);
   margin-right: 1rem;
 }
 
@@ -471,7 +482,8 @@ Stripe Styles
 
 /****************** SUBMENU links **********************/
 .submenu {
-  background: var(--clr-white);
+  /*  background: var(--clr-white); */
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: var(--dark-shadow);
   position: absolute;
   top: 4rem;

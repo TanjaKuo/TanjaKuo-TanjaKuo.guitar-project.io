@@ -3,16 +3,21 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Submenu from "./components/Submenu";
 import Footer from "./components/Footer";
+/* policies */
 import ReturnPolicy from "./components/ReturnPolicy";
 import ShippingPolicy from "./components/ShippingPolicy";
-import PrivatePolicy from "./components/PrivatePolicy";
-
+import PrivacyPolicy from "./components/PrivacyPolicy";
+/* Nav */
 import Home from "./Home/Home";
-import Products from "./Product/Products";
-import SingleGuitar from "./Product/SingleGuitar";
 import Contact from "./Contact/Contact";
 import FAQ from "./FAQ/FAQ";
 import Error from "./Error/Error";
+
+/* Prodcuts */
+import Products from "./Product/Products";
+import SingleGuitar from "./Product/SingleGuitar";
+/* Blog */
+import Blog from "./Blog/Blog";
 import MexicanFender from "./Blog/MexicanFender";
 import FenderUSA from "./Blog/FenderUSA";
 
@@ -48,11 +53,14 @@ function App() {
         <Route exact path="/shipping-policy">
           <ShippingPolicy />
         </Route>
-        <Route exact path="/private-policy">
-          <PrivatePolicy />
+        <Route exact path="/privacy-policy">
+          <PrivacyPolicy />
         </Route>
         <Route exact path="/testing">
           <TestingProducts />
+        </Route>
+        <Route exact path="/blog">
+          <Blog />
         </Route>
         <Route exact path="/blog/mexican-fender">
           <MexicanFender />
