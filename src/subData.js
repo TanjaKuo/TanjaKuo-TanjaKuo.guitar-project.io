@@ -11,14 +11,14 @@ import banner3 from "./image/banner3.png";
 import banner4 from "./image/banner4.png";
 import banner5 from "./image/banner5.png";
 // guitar img
-import fender1 from "./image/fender1.png";
-import fender2 from "./image/fender2.png";
-import gibson3 from "./image/gibson3.png";
-import gibson4 from "./image/gibson4.png";
-import gibson5 from "./image/gibson5.png";
-import yamaha6 from "./image/yamaha6.png";
-import yamaha7 from "./image/yamaha7.png";
-import yamaha8 from "./image/yamaha8.png";
+import fender12 from "./image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
+import fender13 from "./image/FENDER/Fender−Newporter-Player.png";
+import gibson11 from "./image/GIBSON/Gibson-Slash-Les-Paul-Standard.png";
+import gibson12 from "./image/GIBSON/Gibson-Custom-Shop-1968-Les-Paul-Standard.png";
+import gibson13 from "./image/GIBSON/Gibson-Les-Paul-Special-Tribute-Humbucker.png";
+import yamaha11 from "./image/YAMAHA/Yamaha-BBNE2.png";
+import yamaha8 from "./image/YAMAHA/Yamaha-RS620.png";
+import yamaha5 from "./image/YAMAHA/Yamaha-611VFM.png";
 
 export const data = [
   {
@@ -103,42 +103,42 @@ export const bannerImg = [
 export const guitarImg = [
   {
     id: 100,
-    img: { url: fender1 },
+    img: { url: fender12 },
     alt: "fender guitar",
   },
   {
     id: 101,
-    img: { url: fender2 },
+    img: { url: fender13 },
     alt: "fender guitar",
   },
   {
     id: 102,
-    img: { url: gibson3 },
+    img: { url: gibson11 },
     alt: "gibson guitar",
   },
   {
     id: 103,
-    img: { url: gibson4 },
+    img: { url: gibson12 },
     alt: "gibson guitar",
   },
   {
     id: 104,
-    img: { url: gibson5 },
+    img: { url: gibson13 },
     alt: "gibson guitar",
   },
   {
     id: 105,
-    img: { url: yamaha6 },
+    img: { url: yamaha11 },
     alt: "yamaha guitar",
   },
   {
     id: 106,
-    img: { url: yamaha7 },
+    img: { url: yamaha8 },
     alt: "yamaha guitar",
   },
   {
     id: 107,
-    img: { url: yamaha8 },
+    img: { url: yamaha5 },
     alt: "yamaha guitar",
   },
 ];

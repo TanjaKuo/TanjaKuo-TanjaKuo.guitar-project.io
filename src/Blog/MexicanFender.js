@@ -3,8 +3,7 @@ import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
 
 export const MexicanFender = () => {
-  const { closeSubmenu, showYamaha, openGuitar, openBrand } =
-    useGlobalContext();
+  const { closeSubmenu } = useGlobalContext();
   return (
     <>
       <section className="products-page" onMouseOver={closeSubmenu}>

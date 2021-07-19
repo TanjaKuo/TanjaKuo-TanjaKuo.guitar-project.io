@@ -7,6 +7,7 @@ import hero from "../image/hero3.png";
 import Banner from "./Banner";
 import GuitarItem from "./GuitarItem";
 import Post from "./Post";
+
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
 
@@ -41,6 +42,11 @@ const Home = () => {
       <section className="post-section" /* onScroll={scrollY} */>
         <Post />
       </section>
+      <div className="home-blog-btn">
+        <Link>
+          <button className="read-btn">Read more</button>
+        </Link>
+      </div>
     </>
   );
 };

@@ -9,6 +9,11 @@ import yamaha7 from "./image/YAMAHA/Yamaha-RS720B.png";
 import yamaha8 from "./image/YAMAHA/Yamaha-RS620.png";
 import yamaha9 from "./image/YAMAHA/Yamaha-RS420FB.png";
 import yamaha10 from "./image/YAMAHA/Yamaha-RS420.png";
+import yamaha11 from "./image/YAMAHA/Yamaha-BBNE2.png";
+import yamaha12 from "./image/YAMAHA/Yamaha-TRBX605.png";
+import yamaha13 from "./image/YAMAHA/Yamaha-RSP20CR.png";
+import yamaha14 from "./image/YAMAHA/Yamaha-APX600.png";
+
 /* fender guitar */
 import fender1 from "./image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
 import fender2 from "./image/FENDER/Fender-American-Original-50s-Stratocaster.png";
@@ -21,6 +26,9 @@ import fender8 from "./image/FENDER/Fender-America-Performer-Telecaster-Hum.png"
 import fender9 from "./image/FENDER/Fender-Special-Edition-Custom-Telecaster-FMT-HH.png";
 import fender10 from "./image/FENDER/Fender−Jim-Adkins-JA-90-Telecaster-Thinline.png";
 import fender11 from "./image/FENDER/Fender-Made-in-Japan-Traditional-50s-Telecaster.png"; //!!!
+import fender12 from "./image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
+import fender13 from "./image/FENDER/Fender−Newporter-Player.png";
+import fender14 from "./image/FENDER/Fender-Cory-Wong-Stratocaster-with-Rosewood-Fingerboard.png";
 
 /* import fender11 from "./image/FENDER/"; */
 import gibson1 from "./image/GIBSON/Gibson-Orianthi-SJ200.png";
@@ -33,6 +41,9 @@ import gibson7 from "./image/GIBSON/Gibson-Murphy-Labs-63.png";
 import gibson8 from "./image/GIBSON/Gibson-Murphy-57.png";
 import gibson9 from "./image/GIBSON/Gibson-Murphy-64.png";
 import gibson10 from "./image/GIBSON/Gibson-ES-345.png";
+import gibson11 from "./image/GIBSON/Gibson-Slash-Les-Paul-Standard.png";
+import gibson12 from "./image/GIBSON/Gibson-Custom-Shop-1968-Les-Paul-Standard.png";
+import gibson13 from "./image/GIBSON/Gibson-Les-Paul-Special-Tribute-Humbucker.png";
 
 const guitarData = [
   {
@@ -114,6 +125,30 @@ const guitarData = [
     color: "brown",
     price: "5600",
     image: { url: gibson10 },
+  },
+  {
+    id: "guitar60",
+    brand: "gibson",
+    name: "Gibson Slash Les Paul Standard Limited Edition in Vermillion Burst",
+    color: "red",
+    price: "4850",
+    image: { url: gibson11 },
+  },
+  {
+    id: "guitar61",
+    brand: "gibson",
+    name: "Gibson Custom Shop 1968 Les Paul Standard Goldtop Reissue",
+    color: "yellow",
+    price: "9800",
+    image: { url: gibson12 },
+  },
+  {
+    id: "guitar62",
+    brand: "gibson",
+    name: "Gibson Les Paul Special Tribute Humbucker in Ebony Satin",
+    color: "black",
+    price: "1359",
+    image: { url: gibson13 },
   },
   /* {
     id: "guitar50",
@@ -202,6 +237,38 @@ const guitarData = [
     color: "brown",
     price: "595",
     image: { url: yamaha10 },
+  },
+  {
+    id: "guitar11",
+    brand: "Yamaha",
+    name: "Yamaha BBNE2 Nathan East Bass Black 5 String",
+    color: "black",
+    price: "4952",
+    image: { url: yamaha11 },
+  },
+  {
+    id: "guitar12",
+    brand: "Yamaha",
+    name: "Yamaha TRBX605 5 String Active-Passic Bass Guitar - Translucent Black",
+    color: "black",
+    price: "998",
+    image: { url: yamaha12 },
+  },
+  {
+    id: "guitar13",
+    brand: "Yamaha",
+    name: "Yamaha - Revstar RSP20CR Electric Guitar in Rusty Rat",
+    color: "gray",
+    price: "2345",
+    image: { url: yamaha13 },
+  },
+  {
+    id: "guitar14",
+    brand: "Yamaha",
+    name: "Yamaha APX600 Acoustic Electric Guitar - Oriental Blue Burst",
+    color: "green",
+    price: "595",
+    image: { url: yamaha14 },
   },
   /*  {
     id: "guitar1",
@@ -323,6 +390,30 @@ const guitarData = [
     TuningMachines: "Vintage-Style",
     Strings: "Nickel Plated Steel (.009-.042 Gauges)",
     CaseOrGigBag: "Gig Bag",
+  },
+  {
+    id: "guitar111",
+    brand: "fender",
+    name: "Fender Parallel Universe II Tele Mágico - Maple Fingerboard - Transparent Surf Green",
+    color: "green",
+    price: "3789",
+    image: { url: fender12 },
+  },
+  {
+    id: "guitar112",
+    brand: "fender",
+    name: "Fender − Newporter Player, Walnut Fingerboard, Ice Blue Satin",
+    color: "blue",
+    price: "459",
+    image: { url: fender13 },
+  },
+  {
+    id: "guitar113",
+    brand: "fender",
+    name: "Fender Cory Wong Stratocaster with Rosewood Fingerboard in Sapphire Blue Transparent",
+    color: "blue",
+    price: "3109",
+    image: { url: fender14 },
   } /*  {
     id: "guitar110",
     brand: "fender",

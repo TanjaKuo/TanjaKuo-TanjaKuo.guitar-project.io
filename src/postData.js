@@ -5,13 +5,18 @@ import blog4 from "./image/Blog/blog4.png";
 /* import blog5 from "./image/Blog/blog5.png";
 import blog6 from "./image/Blog/blog6.png"; */
 
-const postData = [
+import fender from "./image/brand/fender.svg";
+import yamaha from "./image/brand/yamaha.svg";
+//import gibson from "./image/brand/gibson-logo_thumbnail.png";
+import gibson2 from "./image/brand/gibson-logo.png";
+
+export const postData = [
   {
     id: "a",
     title: " Mexican Fender / Squier Strats: The Mid 1990s Boom",
     des: "After a pretty grim start, Fender’s Mexican guitar production initially remained somewhat muted within the overall range on the UK market.",
     url: "/blog/mexican-fender",
-    img: { ur: blog1 },
+    img: { url: blog1 },
   },
   {
     id: "b",
@@ -36,4 +41,21 @@ const postData = [
   },
 ];
 
-export default postData;
+export const brandLogo = [
+  {
+    id: "gibson",
+    name: "gibson",
+    img: { url: gibson2 },
+  },
+
+  {
+    id: "fender",
+    name: "fender",
+    img: { url: fender },
+  },
+  {
+    id: "yamaha",
+    name: "yamaha",
+    img: { url: yamaha },
+  },
+];

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -7,17 +7,20 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 const Navbar = (props) => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
   const [color, setColor] = useState("transparent");
-  const changeColor = (e) => {
+  const changeColor = useCallback((e) => {
     if (window.scrollY > 20) {
       setColor("rgba(29, 53, 87, 0.99)");
     } else {
       setColor("transparent");
     }
-  };
+  }, []); // remember to pass[] in the end
 
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
-  }, window.removeEventListener("scroll", changeColor));
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, [changeColor]);
 
   /*  add dynamic submenu height later 07.15 */
   const displaySubmenu = (e) => {

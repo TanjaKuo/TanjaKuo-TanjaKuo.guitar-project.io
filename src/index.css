@@ -655,6 +655,29 @@ Stripe Styles
   overflow: auto; */
 }
 
+.home-blog-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.read-btn {
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  color: var(--clr-whitish);
+  background: var(--crl--blue);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 800px) {
+  .home-blog-btn {
+    display: none;
+  }
+}
+
 .post-container {
   display: flex;
   justify-content: space-around;
@@ -1333,4 +1356,34 @@ https://zurb.com/playground/motion-ui
 .blog-li {
   color: var(--clr-grey-5);
   margin-bottom: 1.2rem;
+}
+
+/* brand */
+.brand-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/* .brand-section {
+  display: flex;
+  flex-direction: row;
+} */
+
+.brand-logo {
+  width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .brand-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12rem;
+  }
+
+  .brand-logo {
+    width: 50%;
+  }
 }

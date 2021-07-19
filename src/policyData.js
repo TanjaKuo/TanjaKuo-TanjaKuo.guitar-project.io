@@ -1,5 +1,3 @@
-import React from "react";
-
 export const shippingPolicy = [
   {
     id: 1111,
