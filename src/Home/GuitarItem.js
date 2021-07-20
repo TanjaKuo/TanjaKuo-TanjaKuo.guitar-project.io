@@ -61,10 +61,12 @@ const GuitarItem = () => {
       <h2 className="guitar-sale"> Hot Sale </h2>
       <Slider {...settings}>
         {guitarImg.map((infos) => {
-          const { id, img, alt } = infos;
+          const { id, img, alt, url } = infos;
           return (
             <div key={id}>
-              <img src={img.url} alt={alt} className="guitars" />
+              <a href={url}>
+                <img src={img.url} alt={alt} className="guitars" />
+              </a>
             </div>
           );
         })}

@@ -11,12 +11,13 @@ import banner3 from "./image/banner3.png";
 import banner4 from "./image/banner4.png";
 import banner5 from "./image/banner5.png";
 // guitar img
-import fender12 from "./image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
-import fender13 from "./image/FENDER/Fender−Newporter-Player.png";
-import gibson11 from "./image/GIBSON/Gibson-Slash-Les-Paul-Standard.png";
-import gibson12 from "./image/GIBSON/Gibson-Custom-Shop-1968-Les-Paul-Standard.png";
-import gibson13 from "./image/GIBSON/Gibson-Les-Paul-Special-Tribute-Humbucker.png";
-import yamaha11 from "./image/YAMAHA/Yamaha-BBNE2.png";
+import fender21 from "./image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
+import fender33 from "./image/FENDER/Fender−Newporter-Player.png";
+import fender25 from "./image/FENDER/Fender-Boxer-Series-Telecaster-HH.png";
+
+import gibson61 from "./image/GIBSON/Gibson-Slash-Les-Paul-Standard.png";
+import gibson62 from "./image/GIBSON/Gibson-Custom-Shop-1968-Les-Paul-Standard.png";
+import gibson63 from "./image/GIBSON/Gibson-Les-Paul-Special-Tribute-Humbucker.png";
 import yamaha8 from "./image/YAMAHA/Yamaha-RS620.png";
 import yamaha5 from "./image/YAMAHA/Yamaha-611VFM.png";
 
@@ -55,7 +56,6 @@ export const bannerImg = [
   {
     id: 1,
     img: { url: banner1 },
-
     alt: "banner1",
   },
   {
@@ -87,43 +87,51 @@ export const bannerImg = [
 export const guitarImg = [
   {
     id: 100,
-    img: { url: fender12 },
+    img: { url: fender21 },
     alt: "fender guitar",
+    url: "./products/fender21",
   },
   {
     id: 101,
-    img: { url: fender13 },
+    img: { url: fender33 },
     alt: "fender guitar",
+    url: "./products/fender33",
   },
   {
     id: 102,
-    img: { url: gibson11 },
-    alt: "gibson guitar",
+    img: { url: fender25 },
+    alt: "yamaha guitar",
+    url: "./products/fender25",
   },
   {
     id: 103,
-    img: { url: gibson12 },
+    img: { url: gibson61 },
     alt: "gibson guitar",
+    url: "./products/gibson61",
   },
   {
     id: 104,
-    img: { url: gibson13 },
+    img: { url: gibson62 },
     alt: "gibson guitar",
+    url: "./products/gibson62",
   },
   {
     id: 105,
-    img: { url: yamaha11 },
-    alt: "yamaha guitar",
+    img: { url: gibson63 },
+    alt: "gibson guitar",
+    url: "./products/gibson63",
   },
   {
     id: 106,
     img: { url: yamaha8 },
     alt: "yamaha guitar",
+    url: "./products/yamaha8",
   },
   {
     id: 107,
     img: { url: yamaha5 },
     alt: "yamaha guitar",
+    url: "./products/yamaha5",
   },
 ];
 
