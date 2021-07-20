@@ -63,11 +63,9 @@ const GuitarItem = () => {
         {guitarImg.map((infos) => {
           const { id, img, alt, url } = infos;
           return (
-            <div key={id}>
-              <a href={url}>
-                <img src={img.url} alt={alt} className="guitars" />
-              </a>
-            </div>
+            <a href={url} key={id} className="trail">
+              <img src={img.url} alt={alt} className="guitars" />
+            </a>
           );
         })}
         <div>{/* leave one empty div for space */}</div>

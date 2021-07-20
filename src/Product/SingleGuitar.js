@@ -86,7 +86,7 @@ const SingleGuitar = () => {
       <section className="single-guitar-hero" onMouseOver={closeSubmenu}>
         <div className="single-guitar-center" key={id}>
           <h3 className="single-guitar-title">{name}</h3>
-          <img src={image.url} alt={name} />
+          <img src={image.url} alt={name} className="single-guitar-img" />
           <div className="single-guitar-info">
             <h3>Guitar Infomation</h3>
             <p>Brand: {brand}</p>

@@ -7,7 +7,7 @@ import hero from "../image/hero3.png";
 import Banner from "./Banner";
 import GuitarItem from "./GuitarItem";
 import Post from "./Post";
-import Modal from "../components/TransitionsModal";
+//import Modal from "../components/TransitionsModal";
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
 
@@ -16,7 +16,7 @@ const Home = () => {
       <section className="hero" onMouseOver={closeSubmenu}>
         <div className="hero-center">
           <article className="hero-info typewriter">
-            <Modal />
+            {/* <Modal /> */}
             <h1>best guitar ever</h1>{" "}
             <p>
               Millions of companies of all sizes—from startups to Fortune
