@@ -7,9 +7,9 @@ export const FenderUSA = () => {
   return (
     <>
       <section className="products-page" onMouseOver={closeSubmenu}>
-        <div className="blog">
+        <div className="article">
           <article className="hero-info guitar-info"></article>
-          <h2 className="blog-title">
+          <h2 className="article-title">
             Fender USA '52 Telecaster Reissue (1992)
           </h2>
           <p>Saturday, 14 July 2021 </p>
@@ -128,7 +128,7 @@ export const FenderUSA = () => {
             holds immense charm and appeal.
           </p>
           <br />
-          <h4 className="blog-title">THE EXAMPLE IN QUESTION</h4>
+          <h4 className="article-title">THE EXAMPLE IN QUESTION</h4>
           <br />
           <p>
             This particular example is, as I mentioned, an early ‘90s

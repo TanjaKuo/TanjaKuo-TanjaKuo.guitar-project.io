@@ -1343,13 +1343,44 @@ https://zurb.com/playground/motion-ui
 }
 /* ****************** Blog ************/
 .blog {
+  margin-top: 12rem;
+}
+
+.blog-title {
+  color: var(--clr-whitish);
+  margin-bottom: 3rem;
+  border-bottom: 2px solid var(--clr-red);
+}
+@media screen and (min-width: 800px) {
+  .blog {
+    margin-top: 12rem;
+  }
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+  }
+  .blog-title {
+    color: var(--clr-whitish);
+    border-bottom: 2px solid var(--clr-red);
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .blogs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.article {
   width: 90vw;
   max-width: var(--max-width);
   display: grid;
   align-items: center;
 }
 
-.blog-title {
+.article-title {
   color: var(--clr-red);
 }
 
@@ -1386,4 +1417,8 @@ https://zurb.com/playground/motion-ui
   .brand-logo {
     width: 50%;
   }
+}
+
+.calcelBtn {
+  display: none;
 }

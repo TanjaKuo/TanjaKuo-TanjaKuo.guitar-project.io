@@ -167,7 +167,7 @@ export const footerInfo = [
     name: [
       { label: "10 Bellerine Street, GEELONG VIC 3220" },
       { label: "ph: 0423235600" },
-      { label: "Email: harro@mr-guitar@gmail.com" },
+      { label: "Email: harro.mr.guitar@gmail.com" },
     ],
   },
 ];

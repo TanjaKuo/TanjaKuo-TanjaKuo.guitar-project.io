@@ -62,7 +62,7 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li>
-            <Link to="/products">
+            <Link to="/blog">
               <button className="link-btn" onMouseOver={displaySubmenu}>
                 blog
               </button>

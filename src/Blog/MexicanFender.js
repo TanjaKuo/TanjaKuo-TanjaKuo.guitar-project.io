@@ -7,9 +7,9 @@ export const MexicanFender = () => {
   return (
     <>
       <section className="products-page" onMouseOver={closeSubmenu}>
-        <div className="blog">
+        <div className="article">
           <article className="hero-info guitar-info"></article>
-          <h2 className="blog-title">
+          <h2 className="article-title">
             Mexican Fender / Squier Strats: The Mid 1990s Boom
           </h2>
           <p>Saturday, 11 July 2020 </p>
@@ -90,7 +90,7 @@ export const MexicanFender = () => {
             was about to bring Mexico into a much more central position.
           </p>
           <br />
-          <h4 className="blog-title">THE PLAN</h4>
+          <h4 className="article-title">THE PLAN</h4>
           <p>
             Part of the plan was to take some of the weight (and dependency) off
             the MIJ Vintage Reissue series within the immediate sub-USA
@@ -229,7 +229,7 @@ export const MexicanFender = () => {
             </p>
             <br />
           </ul>
-          <h4 className="blog-title">DID THE ’94 MEXICAN STRATS SUCCEED?</h4>
+          <h4 className="article-title">DID THE ’94 MEXICAN STRATS SUCCEED?</h4>
           <p>
             Influxing the range with MIM guitars was a plan that had to work,
             because even setting aside exchange rates, on the global market
@@ -245,7 +245,7 @@ export const MexicanFender = () => {
             extremely well indeed – sometimes to the dramatic detriment of MIJ.
           </p>
           <br />
-          <h4 className="blog-title">
+          <h4 className="article-title">
             MIM FENDER SQUIER SERIES VS MIJ SQUIER SILVER SERIES
           </h4>
           <p>
@@ -305,7 +305,7 @@ export const MexicanFender = () => {
             honey finish found on the MIM Contemporaries of the time.
           </p>
           <br />
-          <h4 className="blog-title">DIFFERENT LEAGUE</h4>
+          <h4 className="article-title">DIFFERENT LEAGUE</h4>
           <br />
           <p>
             What was undeniable, was that the Mexican Fender and Squier Strats

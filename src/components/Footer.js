@@ -63,7 +63,7 @@ const Navbar = () => {
               <li>
                 <p className="hours">10 Bellerine Street, GEELONG VIC 3220</p>
                 <p className="hours">ph: 0423235600</p>
-                <p className="hours">Email: harro@mr-guitar@gmail.com</p>
+                <p className="hours">Email: harro.mr.guitar@gmail.com</p>
               </li>
             </ul>
           </div>

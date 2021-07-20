@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -28,47 +29,56 @@ const useStyles = makeStyles({
 
 const Blog = () => {
   const classes = useStyles();
+  const { closeSubmenu } = useGlobalContext();
 
   return (
     <>
-      <div className="post-container">
-        {postData.map((post) => {
-          const { id, title, des, url, img } = post;
-          return (
-            <Card className={classes.root} key={id}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={img.url}
-                  title="Contemplative Reptile"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    {des}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Link to={url}>
-                  <Button size="small" color="primary">
-                    Learn More
-                  </Button>
-                </Link>
-              </CardActions>
-            </Card>
-          );
-        })}
-      </div>
+      <section className="products-page" onMouseOver={closeSubmenu}>
+        <div className="blog">
+          <h2 className="blog-title">News & New Releases</h2>
+
+          <div className="blog-container">
+            {postData.map((post) => {
+              const { id, title, des, url, img } = post;
+              return (
+                <div class="blogs">
+                  <Card className={classes.root} key={id}>
+                    <CardActionArea>
+                      <CardMedia
+                        className={classes.media}
+                        image={img.url}
+                        title="Contemplative Reptile"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          {title}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          color="textSecondary"
+                          component="p"
+                        >
+                          {des}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Share
+                      </Button>
+                      <Link to={url}>
+                        <Button size="small" color="primary">
+                          Learn More
+                        </Button>
+                      </Link>
+                    </CardActions>
+                  </Card>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </>
   );
 };

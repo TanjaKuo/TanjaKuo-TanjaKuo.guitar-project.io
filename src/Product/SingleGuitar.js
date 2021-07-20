@@ -92,28 +92,28 @@ const SingleGuitar = () => {
             <p>Brand: {brand}</p>
             <p>Color: {color}</p>
             <p>Body : {Body}</p>
-            <p>BodyFinish: {BodyFinish}</p>
-            <p>ControlKnobs: {ControlKnobs}</p>
-            <p>HardwareFinish: {HardwareFinish}</p>
-            <p>NeckFinish: {NeckFinish}</p>
+            <p>Body Finish: {BodyFinish}</p>
+            <p>Control Knobs: {ControlKnobs}</p>
+            <p>Hardware Finish: {HardwareFinish}</p>
+            <p>Neck Finish: {NeckFinish}</p>
             <p>Pickguard: {Pickguard}</p>
-            <p>PositionInlays: {PositionInlays}</p>
-            <p>BodyShape: {BodyShape}</p>
-            <p>NeckMaterial: {NeckMaterial}</p>
-            <p>NeckShape: {NeckShape}</p>
-            <p>FingerboardRadius: {FingerboardRadius}</p>
-            <p>NumberofFrets: {NumberofFrets}</p>
-            <p>StringNut: {StringNut}</p>
-            <p>NutWidth: {NutWidth}</p>
-            <p>BridgePickup: {BridgePickup}</p>
-            <p>NeckPickup: {NeckPickup}</p>
+            <p>Position Inlays: {PositionInlays}</p>
+            <p>Body Shape: {BodyShape}</p>
+            <p>Neck Material: {NeckMaterial}</p>
+            <p>Neck Shape: {NeckShape}</p>
+            <p>Fingerboard Radius: {FingerboardRadius}</p>
+            <p>Number of Frets: {NumberofFrets}</p>
+            <p>String Nut: {StringNut}</p>
+            <p>Nut Width: {NutWidth}</p>
+            <p>Bridge Pickup: {BridgePickup}</p>
+            <p>Neck Pickup: {NeckPickup}</p>
             <p>Controls: {Controls}</p>
-            <p>PickupSwitching: {PickupSwitching}</p>
-            <p>PickupConfiguration: {PickupConfiguration}</p>
+            <p>Pickup Switching: {PickupSwitching}</p>
+            <p>Pickup Configuration: {PickupConfiguration}</p>
             <p>Bridge: {Bridge}</p>
-            <p>TuningMachines: {TuningMachines}</p>
+            <p>Tuning Machines: {TuningMachines}</p>
             <p>Strings: {Strings}</p>
-            <p>CaseOrGigBag: {CaseOrGigBag}</p>
+            <p>Case Or GigBag: {CaseOrGigBag}</p>
             <Link to="/products">
               <button className="single-guitar-btn">Return</button>
             </Link>

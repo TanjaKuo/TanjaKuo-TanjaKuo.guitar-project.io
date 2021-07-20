@@ -359,7 +359,7 @@ const guitarData = [
   {
     id: "fender31",
     brand: "fender",
-    name: "Fender Made in Japan Traditional 50s Telecaster",
+    name: "Fender Made in Japan Traditional 50s Telecaster, Maple Fingerboard, Butterscotch Blonde",
     color: "yellow butter scotch",
     price: "1150",
     image: { url: fender31 },
