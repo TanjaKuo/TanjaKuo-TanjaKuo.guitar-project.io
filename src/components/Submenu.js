@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useGlobalContext } from "../context";
+import guitarData from "../guitarData";
 
 const Submenu = () => {
   const {
@@ -20,6 +21,18 @@ const Submenu = () => {
       setColumns("col-3");
     }
   }, [location, page, links]);
+  const [data, setData] = useState(guitarData);
+
+  const filterBrand = (e) => {
+    e.preventDefault();
+    const guitarBrand = e.target.textContent;
+    console.log(guitarBrand);
+    const brandName = data.filter(
+      (e) => e.brand.toLowerCase() === guitarBrand.toLowerCase()
+    );
+    setData(brandName); // super important ****** without it, will not run
+  };
+
   return (
     <aside
       className={`${isSubmenuOpen ? "submenu show" : "submenu"}`}

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import SearchBox from "../Product/SearchBox";
 
 const Navbar = (props) => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();

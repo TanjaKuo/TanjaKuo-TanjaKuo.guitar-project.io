@@ -55,48 +55,32 @@ export const bannerImg = [
   {
     id: 1,
     img: { url: banner1 },
-    /* img: {
-      url: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-    }, */
+
     alt: "banner1",
   },
   {
     id: 2,
-    /* img: {
-      url: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-    }, */
 
     img: { url: banner2 },
     alt: "banner2",
   },
   {
     id: 3,
-    /* img: {
-      url: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-    }, */
 
     img: { url: banner3 },
-    /*     src: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-     */ alt: "banner3",
+    alt: "banner3",
   },
   {
     id: 4,
-    /* img: {
-      url: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-    }, */
 
     img: { url: banner4 },
     alt: "banner4",
   },
   {
     id: 5,
-    /* img: {
-      url: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-    }, */
 
     img: { url: banner5 },
-    /*     src: "https://cdn.shopify.com/s/files/1/0518/1898/7676/files/donner_lesson-pc_1600x.jpg?v=1625472118",
-     */ alt: "banner5",
+    alt: "banner5",
   },
 ];
 

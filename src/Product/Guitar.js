@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const Guitar = ({ data }) => {
+const Guitar = ({ data, filterGuitar }) => {
   return (
     <>
       <article className="contact-section">

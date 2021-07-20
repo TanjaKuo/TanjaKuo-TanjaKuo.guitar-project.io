@@ -7,18 +7,17 @@ import SearchBox from "./SearchBox";
 import Pagination from "./Pagination";
 import Guitar from "./Guitar";
 
-const Products = () => {
+const BrandGuitar = () => {
   const { closeSubmenu } = useGlobalContext();
-  const [searchField, setSearchField] = useState("");
-  const [text, setText] = useState([]);
-  /*   const [showBrand, setShowBrand] = useState({
+  const [searchField, setsetSearchField] = useState("");
+  const [showBrand, setShowBrand] = useState({
     id: "",
     brand: "",
     color: "",
     price: "",
     name: "",
     image: {},
-  }); */
+  });
   /* ************************* */
   const [data, setData] = useState(guitarData);
   const [loading, setLoading] = useState(false);
@@ -45,18 +44,14 @@ const Products = () => {
   /* color match */
   const filterColor = (e) => {
     const guitarBrand = e.target.textContent;
-    const brandColor = guitarData.filter(
+    const brandName = guitarData.filter(
       (e) => e.color.toLowerCase() === guitarBrand.toLowerCase()
     );
-    setData(brandColor); // super important ****** without it, will not run
+    setData(brandName); // super important ****** without it, will not run
   };
 
-  const searchGuitar = (e) => {
-    const searchName = e.target.value;
-    const filterSearch = guitarData.filter((e) =>
-      e.name.toLowerCase().includes(searchName)
-    );
-    setData(filterSearch); // super important ****** without it, will not run
+  const onSearchChange = (e) => {
+    setsetSearchField(e.target.value);
   };
 
   return (
@@ -66,7 +61,7 @@ const Products = () => {
           <article className="hero-info guitar-info">
             <div className="guitar-category">
               <div className="guitar-brand">
-                <SearchBox searchGuitar={searchGuitar} />
+                <SearchBox searchChange={onSearchChange} />
                 <h4 className="category">Brand</h4>
                 <div className="category-btns">
                   <button className="category-btn" onClick={filterBrand}>
@@ -137,4 +132,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default BrandGuitar;

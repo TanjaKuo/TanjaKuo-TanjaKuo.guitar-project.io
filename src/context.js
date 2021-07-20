@@ -9,8 +9,9 @@ const AppProvider = ({ children }) => {
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
   /* guitar page */
+
   const [isShowBrand, setIsshowBrand] = useState(true);
-  const [showBrand, setShowBrand] = useState({
+  /*   const [showBrand, setShowBrand] = useState({
     id: "",
     brand: "",
     color: "",
@@ -18,7 +19,7 @@ const AppProvider = ({ children }) => {
     name: "",
     image: {},
   });
-
+ */
   const [menu, setMenu] = useState(guitarData);
 
   const openSidebar = () => {
@@ -54,7 +55,7 @@ const AppProvider = ({ children }) => {
         closeSubmenu,
         location,
         page,
-        showBrand,
+        menu,
         isShowBrand,
         openBrand,
       }}
