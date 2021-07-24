@@ -11,14 +11,7 @@ const Products = () => {
   const { closeSubmenu } = useGlobalContext();
   const [searchField, setSearchField] = useState("");
   const [text, setText] = useState([]);
-  /*   const [showBrand, setShowBrand] = useState({
-    id: "",
-    brand: "",
-    color: "",
-    price: "",
-    name: "",
-    image: {},
-  }); */
+
   /* ************************* */
   const [data, setData] = useState(guitarData);
   const [loading, setLoading] = useState(false);
