@@ -43,7 +43,6 @@ function App() {
         <Route exact path="/products">
           <Products />
         </Route>
-        {/* <Route path="/products/:brand" children={<BrandGuitar />}></Route> */}
         <Route path="/products/:id" children={<SingleGuitar />}></Route>
         <Route exact path="/faq">
           <FAQ />
