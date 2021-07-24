@@ -8,18 +8,9 @@ const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
-  /* guitar page */
 
   const [isShowBrand, setIsshowBrand] = useState(true);
-  /*   const [showBrand, setShowBrand] = useState({
-    id: "",
-    brand: "",
-    color: "",
-    price: "",
-    name: "",
-    image: {},
-  });
- */
+
   const [menu, setMenu] = useState(guitarData);
 
   const openSidebar = () => {
