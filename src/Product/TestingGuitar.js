@@ -1,18 +1,7 @@
-import React, { useRef, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-
-import { useGlobalContext } from "../context";
-import guitarData from "../guitarData";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const TestingGuitar = ({ data }) => {
-  /*   const {
-    isShowBrand,
-    showBrand: { brand, image, name, id, price, color },
-  } = useGlobalContext();
- */
-
-  /*  console.log(guitarData); */
-
   return (
     <>
       <article className="contact-section">
@@ -40,15 +29,3 @@ const TestingGuitar = ({ data }) => {
 };
 
 export default TestingGuitar;
-
-{
-  /*  <article className="contact-section">
-        <div className="guitar-intro-products">
-          <div key={id} className="guitar-intro-each">
-                         <img src={image.url} alt={name} className="guitar-intro-pics" />
-            
-            <h4 className="guitar-intro-name">{name}</h4>
-            <p className="guitar-intro-brand">{brand}</p>
-            <p>${price} AUD</p>
-</div> */
-}
