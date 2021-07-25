@@ -2,12 +2,9 @@ import blog1 from "./image/Blog/blog1.png";
 import blog2 from "./image/Blog/blog2.png";
 import blog3 from "./image/Blog/blog3.png";
 import blog4 from "./image/Blog/blog4.png";
-/* import blog5 from "./image/Blog/blog5.png";
-import blog6 from "./image/Blog/blog6.png"; */
 
 import fender from "./image/brand/fender.svg";
 import yamaha from "./image/brand/yamaha.svg";
-//import gibson from "./image/brand/gibson-logo_thumbnail.png";
 import gibson2 from "./image/brand/gibson-logo.png";
 
 export const postData = [
