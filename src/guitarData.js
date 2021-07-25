@@ -148,14 +148,6 @@ const guitarData = [
     price: "1359",
     image: { url: gibson63 },
   },
-  /* {
-    id: "guitar50",
-    brand: "gibson",
-    name: "",
-    color: "",
-    price: "",
-    image: { url: gibson1 },
-  }, */
   {
     id: "yamaha1",
     brand: "Yamaha",
@@ -268,14 +260,6 @@ const guitarData = [
     price: "595",
     image: { url: yamaha14 },
   },
-  /*  {
-    id: "guitar1",
-    brand: "yamaha",
-    name: "",
-    color: "",
-    price:,
-    url: { yamaha1 },
-  }, */
   {
     id: "fender21",
     brand: "fender",
@@ -389,14 +373,6 @@ const guitarData = [
     Strings: "Nickel Plated Steel (.009-.042 Gauges)",
     CaseOrGigBag: "Gig Bag",
   },
-  /*   {
-    id: "fender32",
-    brand: "fender",
-    name: "Fender Parallel Universe II Tele Mágico - Maple Fingerboard - Transparent Surf Green",
-    color: "green",
-    price: "3789",
-    image: { url: fender32 },
-  }, */
   {
     id: "fender33",
     brand: "fender",
