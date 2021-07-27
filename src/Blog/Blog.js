@@ -32,7 +32,7 @@ const Blog = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <>
+    <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="blog">
           <h2 className="blog-title">News & New Releases</h2>
@@ -79,7 +79,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -53,7 +53,7 @@ const Products = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="hero-center products">
           <article className="hero-info guitar-info">
@@ -126,7 +126,7 @@ const Products = () => {
         </div>
       </section>
       <Newsletter className="new" />
-    </>
+    </React.Fragment>
   );
 };
 

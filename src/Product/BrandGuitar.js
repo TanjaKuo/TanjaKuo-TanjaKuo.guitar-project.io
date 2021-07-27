@@ -55,7 +55,7 @@ const BrandGuitar = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="hero-center products">
           <article className="hero-info guitar-info">
@@ -128,7 +128,7 @@ const BrandGuitar = () => {
         </div>
       </section>
       <Newsletter className="new" />
-    </>
+    </React.Fragment>
   );
 };
 

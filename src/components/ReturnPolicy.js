@@ -7,7 +7,7 @@ const ReturnPolicy = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <>
+    <React.Fragment>
       <section className="faq-hero" onMouseOver={closeSubmenu}>
         <div className="hero-center">
           <article className="faq-info">
@@ -15,19 +15,19 @@ const ReturnPolicy = () => {
             {returnPolicy.map((returnInfo) => {
               const { id, title, des } = returnInfo;
               return (
-                <>
+                <React.Fragment>
                   <div key={id} className="faq">
                     <h4 className="faq-title">{title}</h4>
                     <p>{des}</p>
                   </div>
-                </>
+                </React.Fragment>
               );
             })}
           </article>
         </div>
         <Newsletter />
       </section>
-    </>
+    </React.Fragment>
   );
 };
 

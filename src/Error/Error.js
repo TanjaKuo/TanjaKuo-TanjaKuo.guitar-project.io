@@ -8,7 +8,7 @@ const Error = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <>
+    <React.Fragment>
       <section className="hero" onMouseOver={closeSubmenu}>
         <div className="hero-center">
           <article className="hero-info">
@@ -24,7 +24,7 @@ const Error = () => {
       </section>
       <br />
       <Newsletter />
-    </>
+    </React.Fragment>
   );
 };
 

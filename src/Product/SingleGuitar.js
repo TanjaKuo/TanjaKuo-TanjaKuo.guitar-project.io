@@ -82,7 +82,7 @@ const SingleGuitar = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <section className="single-guitar-hero" onMouseOver={closeSubmenu}>
         <div className="single-guitar-center" key={id}>
           <h3 className="single-guitar-title">{name}</h3>
@@ -120,7 +120,7 @@ const SingleGuitar = () => {
           </div>
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 };
 

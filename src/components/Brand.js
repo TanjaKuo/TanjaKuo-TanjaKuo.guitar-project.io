@@ -4,7 +4,7 @@ import { brandLogo } from "../postData";
 
 const Brand = () => {
   return (
-    <>
+    <React.Fragment>
       <div className="brand-container">
         {brandLogo.map((brand) => {
           const { id, img, title } = brand;
@@ -16,7 +16,7 @@ const Brand = () => {
           );
         })}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

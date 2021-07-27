@@ -12,7 +12,7 @@ const Home = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <>
+    <React.Fragment>
       <section className="hero" onMouseOver={closeSubmenu}>
         <div className="hero-center">
           <article className="hero-info typewriter">
@@ -48,7 +48,7 @@ const Home = () => {
           <button className="read-btn">Read more</button>
         </Link>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context";
 export const MexicanFender = () => {
   const { closeSubmenu } = useGlobalContext();
   return (
-    <>
+    <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="article">
           <article className="hero-info guitar-info"></article>
@@ -332,7 +332,7 @@ export const MexicanFender = () => {
         </div>
       </section>
       <Newsletter className="new" />
-    </>
+    </React.Fragment>
   );
 };
 

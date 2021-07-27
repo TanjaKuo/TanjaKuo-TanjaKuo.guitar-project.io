@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <>
+    <React.Fragment>
       <section className="newsletter-container">
         <div>
           <article>
@@ -21,7 +21,7 @@ const Newsletter = () => {
           </article>
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 };
 

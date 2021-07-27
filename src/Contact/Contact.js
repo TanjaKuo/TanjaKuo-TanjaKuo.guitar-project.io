@@ -6,7 +6,7 @@ const Contact = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <>
+    <React.Fragment>
       <section className="contact-page" onMouseOver={closeSubmenu}>
         <div className="hero-center contact">
           <article className="hero-info contact-info">
@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
       </section>
       <Newsletter className="new" />
-    </>
+    </React.Fragment>
   );
 };
 export default Contact;

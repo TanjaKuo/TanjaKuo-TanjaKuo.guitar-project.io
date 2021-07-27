@@ -8,7 +8,7 @@ const FAQ = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <>
+    <React.Fragment>
       <section className="faq-hero" onMouseOver={closeSubmenu}>
         <div className="hero-center">
           <article className="faq-info">
@@ -16,19 +16,19 @@ const FAQ = () => {
             {faq.map((info) => {
               const { id, question, answer } = info;
               return (
-                <>
+                <React.Fragment>
                   <div key={id} className="faq">
                     <h4 className="faq-title">{question}</h4>
                     <p>{answer}</p>
                   </div>
-                </>
+                </React.Fragment>
               );
             })}
           </article>
         </div>
         <Newsletter />
       </section>
-    </>
+    </React.Fragment>
   );
 };
 

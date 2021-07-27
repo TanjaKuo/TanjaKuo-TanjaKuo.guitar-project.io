@@ -30,7 +30,7 @@ const Post = () => {
   const classes = useStyles();
 
   return (
-    <>
+    <React.Fragment>
       <div className="post-container">
         {postData.map((post) => {
           const { id, title, des, url, img } = post;
@@ -69,7 +69,7 @@ const Post = () => {
           );
         })}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

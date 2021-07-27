@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const Guitar = ({ data, filterGuitar }) => {
   return (
-    <>
+    <React.Fragment>
       <article className="contact-section">
         <div className="guitar-intro-products">
           {data.map((one) => {
             return (
-              <>
+              <React.Fragment>
                 <div key={one.id} className="guitar-intro-each">
                   <Link to={`/products/${one.id}`}>
                     <img
@@ -24,12 +24,12 @@ const Guitar = ({ data, filterGuitar }) => {
                     <button className="guitar-intro-btn">show detail</button>
                   </Link>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
         </div>
       </article>
-    </>
+    </React.Fragment>
   );
 };
 
