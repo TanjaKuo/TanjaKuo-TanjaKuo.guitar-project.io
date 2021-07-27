@@ -1,0 +1,45 @@
+// BLOG
+products-page
+BLOG
+BLOG-TITLE
+BLOG-CONTAINER
+BLOGS
+
+// FENDER-USA + MEXICOFENDER
+products-page
+ARTICLE
+hero-info guitar-info
+ARTICLE-TITLE
+BLOG-LI
+NEW
+
+// BRANDS
+brand-container
+brand-section
+BRAND-LOGO
+
+// FOOTER
+FOOTER
+footer-center
+footer-mobile-show
+footer-header footer-hide
+footer-title
+footer-content
+footer-link
+policy-links
+policy-btn
+footer-header
+footer-title
+footer-content
+footer-links
+holiday
+hourS
+
+
+// FOOTERSIDEBAR
+Footer-header-show
+footer-each-info
+Footer-title
+foo-btn
+policy-mobile--btn
+disabled
