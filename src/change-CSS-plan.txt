@@ -24,7 +24,8 @@ BRAND-LOGO
 FOOTER
 footer-center
 footer-mobile-show
-footer-header footer-hide
+footer-header 
+footer-hide
 footer-title
 footer-content
 footer-link
