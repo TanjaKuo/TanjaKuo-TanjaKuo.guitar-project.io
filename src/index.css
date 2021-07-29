@@ -1076,7 +1076,6 @@ https://zurb.com/playground/motion-ui
   width: 100%;
   min-height: 100vh;
   margin-top: -5rem;
-  /*   display: grid; */
   grid-template-columns: 1fr;
   justify-items: center;
   margin-bottom: 4rem;
@@ -1088,15 +1087,11 @@ https://zurb.com/playground/motion-ui
   align-self: flex-start;
 }
 .guitar-category {
-  /*   border: 2px solid pink;
- */
   display: flex;
   flex-direction: column;
 }
 
 .guitar-color {
-  /*   border: 2px solid yellow;
- */
   margin: 2rem;
 }
 
