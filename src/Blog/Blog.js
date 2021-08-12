@@ -35,8 +35,8 @@ const Blog = () => {
     <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
         <div className="blog">
+          <article className="hero-info guitar-info"></article>{" "}
           <h2 className="blog-title">News & New Releases</h2>
-
           <div className="blog-container">
             {postData.map((post) => {
               const { id, title, des, url, img } = post;

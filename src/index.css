@@ -1334,7 +1334,10 @@ https://zurb.com/playground/motion-ui
 }
 /* ****************** Blog ************/
 .blog {
-  margin-top: 12rem;
+  width: 90vw;
+  display: grid;
+  justify-content: center;
+  margin-left: 1rem;
 }
 
 .blog-title {
@@ -1343,9 +1346,6 @@ https://zurb.com/playground/motion-ui
   border-bottom: 2px solid var(--clr-red);
 }
 @media screen and (min-width: 800px) {
-  .blog {
-    margin-top: 12rem;
-  }
   .blog-container {
     display: flex;
     justify-content: center;
