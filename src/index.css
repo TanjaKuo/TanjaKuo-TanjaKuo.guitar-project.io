@@ -1251,6 +1251,10 @@ https://zurb.com/playground/motion-ui
     font-size: large;
     cursor: pointer;
   }
+  .single-guitar-img {
+    max-width: 50%;
+    max-height: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1258,6 +1262,10 @@ https://zurb.com/playground/motion-ui
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding-bottom: 12vh;
+  }
+  .single-guitar-img {
+    max-width: 50%;
+    max-height: auto;
   }
 }
 
