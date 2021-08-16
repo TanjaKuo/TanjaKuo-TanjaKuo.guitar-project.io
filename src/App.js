@@ -21,6 +21,8 @@ import Blog from "./Blog/Blog";
 import MexicanFender from "./Blog/MexicanFender";
 import FenderUSA from "./Blog/FenderUSA";
 
+/* Signin && Register forms*/
+import Forms from "./Forms/Forms";
 /* testing */
 import TestingProducts from "./Product/TestingProducts";
 
@@ -67,6 +69,9 @@ function App() {
         </Route>
         <Route exact path="/blog/fender-usa52">
           <FenderUSA />
+        </Route>
+        <Route exact path="/sign-in">
+          <Forms />
         </Route>
         <Route exact path="*">
           <Error />

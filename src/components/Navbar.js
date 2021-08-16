@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import SearchBox from "../Product/SearchBox";
+import PersonIcon from "@material-ui/icons/Person";
+//import SearchBox from "../Product/SearchBox";
 
 const Navbar = (props) => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
@@ -83,9 +84,14 @@ const Navbar = (props) => {
             </Link>
           </li>
         </ul>
-        <button className="link-btn cart-btn">
-          <ShoppingCartIcon fontSize="large" />
-        </button>{" "}
+        <li className="link-btn">
+          <button className="cart-btn">
+            <ShoppingCartIcon fontSize="large" />
+          </button>{" "}
+          <button className="cart-btn">
+            <PersonIcon fontSize="large" />
+          </button>{" "}
+        </li>
       </div>
     </nav>
   );

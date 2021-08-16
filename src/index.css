@@ -307,6 +307,7 @@ Stripe Styles
   }
   .cart-btn {
     display: inline-block;
+    cursor: pointer;
   }
   .nav-links {
     display: block;
@@ -324,22 +325,26 @@ Stripe Styles
   .link-btn {
     height: 100%;
     background: transparent;
-    border-radius: 30px;
     padding: 10px;
     border-color: transparent;
+    grid-template-columns: 1fr 1fr;
     font-size: 1.1rem;
-    color: white;
-    text-transform: capitalize;
+    transform: none;
+
+    border-radius: 30px;
+
     letter-spacing: 1px;
     width: 10rem;
+    /*  color: white;
     cursor: pointer;
+    text-transform: capitalize; */
     margin-right: 3px;
   }
-  .link-btn:hover {
+  /*   .link-btn:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(69, 123, 157, 0.35) 0px -2px 6px 0px inset;
-  }
+  } */
 }
 
 /* hero media query */
