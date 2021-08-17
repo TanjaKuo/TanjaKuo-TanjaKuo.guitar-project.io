@@ -2,7 +2,8 @@ import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
-import PersonIcon from "@material-ui/icons/Person";
+/* icon btn */
+import LoginIcon from "../Forms/LoginIcon";
 import ShopCartIcon from "../ShoppingCart/ShopCartIcon";
 //import SearchBox from "../Product/SearchBox";
 
@@ -86,12 +87,7 @@ const Navbar = (props) => {
         </ul>
         <li className="link-btn">
           <ShopCartIcon />
-          {/*  <button className="cart-btn">
-            <ShoppingCartIcon fontSize="large" />
-          </button>{" "} */}
-          <button className="cart-btn">
-            <PersonIcon fontSize="large" />
-          </button>{" "}
+          <LoginIcon />
         </li>
       </div>
     </nav>
