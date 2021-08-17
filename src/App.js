@@ -28,6 +28,7 @@ import Forms from "./Forms/Forms";
 import ShopCartPage from "./ShoppingCart/ShopCartPage";
 /* testing */
 import TestingProducts from "./Product/TestingProducts";
+import TestingPage from "./TestingPage/TestingPage";
 
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -61,9 +62,6 @@ function App() {
         <Route exact path="/privacy-policy">
           <PrivacyPolicy />
         </Route>
-        <Route exact path="/testing">
-          <TestingProducts />
-        </Route>
         <Route exact path="/blog">
           <Blog />
         </Route>
@@ -78,6 +76,12 @@ function App() {
         </Route>
         <Route exact path="/shop-cart">
           <ShopCartPage />
+        </Route>
+        <Route exact path="/testing">
+          <TestingProducts />
+        </Route>
+        <Route exact path="/try">
+          <TestingPage />
         </Route>
         <Route exact path="*">
           <Error />
