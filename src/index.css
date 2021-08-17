@@ -330,7 +330,7 @@ Stripe Styles
     grid-template-columns: 1fr 1fr;
     font-size: 1.1rem;
     transform: none;
-
+    list-style-type: none;
     border-radius: 30px;
 
     letter-spacing: 1px;

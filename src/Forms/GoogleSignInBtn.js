@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
-const clientId =
-  "969347518634-jn77077986n6difsi9vpt6r7us8lsjpf.apps.googleusercontent.com";
+Const GoogleKey = process.env.REACT_APP_GOOGLE_CLIENT_KEY;
+
+const clientId = GoogleKey;
 
 function GoogleSignInBtn() {
   const [loading, setLoading] = useState("Loading...");
