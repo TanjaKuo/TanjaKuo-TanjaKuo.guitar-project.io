@@ -23,6 +23,9 @@ import FenderUSA from "./Blog/FenderUSA";
 
 /* Signin && Register forms*/
 import Forms from "./Forms/Forms";
+
+/* ShopCart */
+import ShopCartPage from "./ShoppingCart/ShopCartPage";
 /* testing */
 import TestingProducts from "./Product/TestingProducts";
 
@@ -72,6 +75,9 @@ function App() {
         </Route>
         <Route exact path="/sign-in">
           <Forms />
+        </Route>
+        <Route exact path="/shop-cart">
+          <ShopCartPage />
         </Route>
         <Route exact path="*">
           <Error />
