@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
-import { guitarImg } from "../subData";
+//import { guitarImg } from "../subData";
 //import GuitarList from "./GuitarList";
 import guitarData from "../guitarData";
 import SearchBox from "./SearchBox";
-import SingleGuitar from "./SingleGuitar";
+//import SingleGuitar from "./SingleGuitar";
 import TestingGuitar from "./TestingGuitar";
 import Pagination from "./Pagination";
 
@@ -20,10 +20,9 @@ const TestingProducts = () => {
     price: "",
     name: "",
     image: {},
-  });
-  /* ************************* */
+  }); 
   const [data, setData] = useState(guitarData);
-  const [loading, setLoading] = useState(false);
+  //const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostPerPage] = useState(9);
 
@@ -33,11 +32,10 @@ const TestingProducts = () => {
 
   const paginate = (pageNumbers) => setCurrentPage(pageNumbers);
 
-  /* ************************* */
 
   const [buttons, setButtons] = useState([]);
   console.log(data);
-  /* brand match */
+  * brand match *
   const filter = (e) => {
     const guitarBrand = e.target.textContent;
     const brandName = guitarData.filter(
@@ -101,3 +99,4 @@ const TestingProducts = () => {
 };
 
 export default TestingProducts;
+ */

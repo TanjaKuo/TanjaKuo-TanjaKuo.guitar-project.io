@@ -9,12 +9,12 @@ import Guitar from "./Guitar";
 
 const Products = () => {
   const { closeSubmenu } = useGlobalContext();
-  const [searchField, setSearchField] = useState("");
-  const [text, setText] = useState([]);
+  //const [searchField, setSearchField] = useState("");
+  //const [text, setText] = useState([]);
 
   /* ************************* */
   const [data, setData] = useState(guitarData);
-  const [loading, setLoading] = useState(false);
+  //const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostPerPage] = useState(9);
 
@@ -26,7 +26,7 @@ const Products = () => {
 
   /* ************************* */
 
-  const [buttons, setButtons] = useState([]);
+  //const [buttons, setButtons] = useState([]);
   /* brand match */
   const filterBrand = (e) => {
     const guitarBrand = e.target.textContent;
