@@ -71,18 +71,6 @@ function App() {
         <Route exact path="/blog/fender-usa52">
           <FenderUSA />
         </Route>
-        <Route exact path="/sign-in">
-          <Forms />
-        </Route>
-        <Route exact path="/shop-cart">
-          <ShopCartPage />
-        </Route>
-        <Route exact path="/testing">
-          <TestingProducts />
-        </Route>
-        <Route exact path="/try">
-          <TestingPage />
-        </Route>
         <Route exact path="*">
           <Error />
         </Route>
