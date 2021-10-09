@@ -220,6 +220,9 @@ Stripe Styles
 .nav-links {
   display: none;
 }
+.link-btn {
+  text-transform: none;
+}
 .cart-btn {
   display: none;
   background-color: transparent;
@@ -332,8 +335,8 @@ Stripe Styles
     font-size: 1.1rem;
     transform: none;
     list-style-type: none;
+    text-transform: none;
     border-radius: 30px;
-
     letter-spacing: 1px;
     width: 10rem;
     /*  color: white;
@@ -1109,9 +1112,12 @@ https://zurb.com/playground/motion-ui
 .category-btns {
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
 }
 
 .category-btn {
+  max-width: 75vw;
+  padding-right: 2rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.3rem;
   padding-top: 0.3rem;

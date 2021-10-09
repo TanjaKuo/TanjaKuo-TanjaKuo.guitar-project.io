@@ -85,10 +85,10 @@ const Navbar = (props) => {
             </Link>
           </li>
         </ul>
-        <li className="link-btn">
+        {/* <li className="link-btn">
           <ShopCartIcon />
           <LoginIcon />
-        </li>
+        </li> */}
       </div>
     </nav>
   );
