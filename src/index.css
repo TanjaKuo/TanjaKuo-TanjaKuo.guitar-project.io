@@ -478,7 +478,7 @@ Stripe Styles
   box-shadow: rgba(69, 123, 157, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border: 0;
+  border: 3px solid black;
   border-radius: 15px;
   /*  margin-right: 0.1rem; */
 }
@@ -1135,8 +1135,9 @@ https://zurb.com/playground/motion-ui
 
 .category-btn {
   max-width: 75vw;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
   padding-bottom: 0.3rem;
   padding-top: 0.3rem;
   background: transparent;
@@ -1151,16 +1152,19 @@ https://zurb.com/playground/motion-ui
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
 }
 .category-btn-color {
-  width: 25vw;
+  width: 22vw;
   margin: 0.5rem;
   padding: 0.7rem;
   background: transparent;
   color: var(--clr-whitish);
   align-content: center;
   font-size: large;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .guitar-intro-products {
@@ -1173,7 +1177,7 @@ https://zurb.com/playground/motion-ui
 
 .guitar-intro-each {
   justify-content: center;
-  margin: 0.5rem;
+  margin-left: 1rem;
 }
 
 .guitar-intro-each:hover {
@@ -1268,6 +1272,9 @@ https://zurb.com/playground/motion-ui
     align-content: center;
     font-size: large;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
   .category-btns-color {
     display: flex;
