@@ -1154,7 +1154,7 @@ https://zurb.com/playground/motion-ui
   margin: 0.3rem;
 }
 .category-btn-color {
-  width: 19vw;
+  width: 25vw;
   margin: 0.5rem;
   padding: 0.7rem;
   background: transparent;
@@ -1173,7 +1173,7 @@ https://zurb.com/playground/motion-ui
 
 .guitar-intro-each {
   justify-content: center;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .guitar-intro-each:hover {
@@ -1305,7 +1305,7 @@ https://zurb.com/playground/motion-ui
 /* searchbox */
 
 .search-box {
-  margin: 2rem 2.5rem;
+  margin: 2rem 0.5rem;
   padding: 2rem;
   padding-left: 1.5rem;
   font-size: large;
