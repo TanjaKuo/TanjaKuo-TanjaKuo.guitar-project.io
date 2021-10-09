@@ -170,6 +170,7 @@ Stripe Styles
   position: relative;
   color: var(--clr-whitish);
   border: 2px solid var(--clr-red);
+  margin-top: 20px;
 }
 
 .side-logo {
@@ -745,7 +746,7 @@ https://zurb.com/playground/motion-ui
 /******************8 footer section **********************/
 .footer {
   width: auto;
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
   background-color: var(--crl--blue);
   padding: 2.5rem 2rem;
   display: flex;
