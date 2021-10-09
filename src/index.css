@@ -424,11 +424,17 @@ Stripe Styles
   height: 95vh;
   max-width: var(--fixed-width);
   background: currentColor;
-
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
   position: relative;
   padding: 4rem 2rem;
+  overflow: auto;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  /*   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);  glass ui*/
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .close-btn {
@@ -455,13 +461,18 @@ Stripe Styles
 
 .sidebar-sublinks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   row-gap: 0.5rem;
   column-gap: 0.5rem;
 }
 .sidebar-btn {
   padding: 10px;
-  background-color: cadetblue;
+  background: linear-gradient(
+    90deg,
+    rgba(222, 222, 222, 1) 0%,
+    rgba(255, 55, 90, 1) 70%,
+    rgba(32, 55, 90, 1) 100%
+  );
+  /* background-color: cadetblue; */
   /*   background-color: rgba(46, 138, 181, 0.3);
  */
   box-shadow: rgba(69, 123, 157, 0.25) 0px 50px 100px -20px,
@@ -674,7 +685,8 @@ Stripe Styles
 
 .read-btn {
   font-size: 1rem;
-  padding: 0.25rem 0.75rem;
+  padding: 1rem 0.75rem;
+  margin-bottom: 4vh;
   border-radius: var(--radius);
   border-color: transparent;
   color: var(--clr-whitish);
@@ -940,8 +952,9 @@ https://zurb.com/playground/motion-ui
   text-align: center;
   background: #e5989b;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-left: 8vw;
+  margin-bottom: 1rem;
 }
 
 .newsletter-title,
@@ -951,7 +964,6 @@ https://zurb.com/playground/motion-ui
 }
 
 .newsletter-input {
-  width: 30vw;
   font-size: 1rem;
   margin: 1rem;
   padding: 0.25rem 0.75rem;
@@ -960,6 +972,12 @@ https://zurb.com/playground/motion-ui
   color: white;
   cursor: pointer;
   transition: var(--transition);
+}
+
+@media screen and (min-width: 800px) {
+  .newsletter-input {
+    width: 30vw;
+  }
 }
 
 .newsletter-btn {
@@ -1125,6 +1143,8 @@ https://zurb.com/playground/motion-ui
   color: var(--clr-whitish);
   align-content: center;
   font-size: large;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .category-btns-color {
@@ -1134,6 +1154,7 @@ https://zurb.com/playground/motion-ui
   margin: 0.3rem;
 }
 .category-btn-color {
+  width: 19vw;
   margin: 0.5rem;
   padding: 0.7rem;
   background: transparent;
@@ -1152,7 +1173,7 @@ https://zurb.com/playground/motion-ui
 
 .guitar-intro-each {
   justify-content: center;
-  margin-left: 1.5rem;
+  margin: 1rem;
 }
 
 .guitar-intro-each:hover {
@@ -1284,9 +1305,9 @@ https://zurb.com/playground/motion-ui
 /* searchbox */
 
 .search-box {
-  margin: 2rem;
-  padding-top: 1.5rem;
-  padding-left: 2rem;
+  margin: 2rem 2.5rem;
+  padding: 2rem;
+  padding-left: 1.5rem;
   font-size: large;
 }
 
@@ -1364,6 +1385,11 @@ https://zurb.com/playground/motion-ui
   color: var(--clr-whitish);
   margin-bottom: 3rem;
   border-bottom: 2px solid var(--clr-red);
+}
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 800px) {
   .blog-container {
