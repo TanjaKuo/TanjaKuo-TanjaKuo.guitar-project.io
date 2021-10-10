@@ -4,6 +4,8 @@ import { useGlobalContext } from "../context";
 
 import { faq } from "../subData";
 
+import "./faq-style.css";
+
 const FAQ = () => {
   const { closeSubmenu } = useGlobalContext();
 

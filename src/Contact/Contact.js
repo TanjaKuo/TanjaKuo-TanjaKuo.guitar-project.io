@@ -2,6 +2,8 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import Newsletter from "../components/Newsletter";
 
+import "./contact-style.css";
+
 const Contact = () => {
   const { closeSubmenu } = useGlobalContext();
 
@@ -11,7 +13,7 @@ const Contact = () => {
         <div className="hero-center contact">
           <article className="hero-info contact-info">
             <h1>contact Us</h1>
-            <h4>ph: 0423235600</h4>
+            <h4 className="number">ph: 0423235600</h4>
             <p>Email: harro@mr-guitar@gmail.com</p>
           </article>
           <article className="contact-section">

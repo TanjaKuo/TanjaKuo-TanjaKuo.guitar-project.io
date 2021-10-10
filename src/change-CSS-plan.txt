@@ -1,3 +1,52 @@
+update 10.10
+
+// css
+// blog
+products-page
+blog
+blog-title
+blogs
+blog-container
+guitar-info
+hero-info
+
+// blog-fender && mexican
+article
+article-title
+blog-li
+
+// contact
+contact-page
+hero-center
+contact
+hero-info 
+contact-info
+contact-section
+contact-form
+contact-btn
+number
+
+// error
+hero
+hero-center
+hero-info
+btn
+hero-images
+stand-up
+
+// faq
+faq-hero
+hero-center
+faq-info
+fas-main-title
+faq
+faq-title
+
+******************************
+
+// old
+
+
 // BLOG
 products-page
 BLOG

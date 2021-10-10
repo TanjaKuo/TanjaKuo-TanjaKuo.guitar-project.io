@@ -339,9 +339,9 @@ Stripe Styles
     border-radius: 30px;
     letter-spacing: 1px;
     width: 10rem;
-    /*  color: white;
+    color: var(--clr-whitish);
     cursor: pointer;
-    text-transform: capitalize; */
+    text-transform: capitalize;
     margin-right: 3px;
   }
   /*   .link-btn:hover {
@@ -1178,6 +1178,7 @@ https://zurb.com/playground/motion-ui
 .guitar-intro-each {
   justify-content: center;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .guitar-intro-each:hover {

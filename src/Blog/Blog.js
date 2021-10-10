@@ -13,6 +13,8 @@ import Typography from "@material-ui/core/Typography";
 
 import { postData } from "../postData";
 
+import "./blog-style.css";
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 255,

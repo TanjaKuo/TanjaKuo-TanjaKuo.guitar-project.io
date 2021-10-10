@@ -2,6 +2,8 @@ import React from "react";
 import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
 
+import "./blog-style.css";
+
 export const FenderUSA = () => {
   const { closeSubmenu } = useGlobalContext();
   return (
@@ -242,7 +244,7 @@ export const FenderUSA = () => {
           </p>
         </div>
       </section>
-      <Newsletter className="new" />
+      <Newsletter /* className="new"  */ />
     </React.Fragment>
   );
 };

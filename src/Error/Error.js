@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import hero from "../image/hero3.png";
 import Newsletter from "../components/Newsletter";
 
+import "./error-style.css";
+
 const Error = () => {
   const { closeSubmenu } = useGlobalContext();
 
