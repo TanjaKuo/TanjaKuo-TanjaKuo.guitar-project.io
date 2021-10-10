@@ -358,7 +358,8 @@ Stripe Styles
     height: 100%;
   }
   .hero-center {
-    grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .hero-info h1 {
@@ -375,7 +376,8 @@ Stripe Styles
 
 @media screen and (min-width: 1200px) {
   .hero-center {
-    grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: end;
     padding-bottom: 12vh;
   }
@@ -392,6 +394,8 @@ Stripe Styles
 }
 @media screen and (min-width: 1400px) {
   .hero-center {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding-bottom: 20vh;
   }
   .phone-img {
@@ -1116,7 +1120,7 @@ https://zurb.com/playground/motion-ui
 }
 .guitar-info {
   margin-top: 15rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
   display: flex;
   align-self: flex-start;
 }
@@ -1324,6 +1328,15 @@ https://zurb.com/playground/motion-ui
   padding: 2rem;
   padding-left: 1.5rem;
   font-size: large;
+}
+
+@media screen and (min-width: 800px) {
+  .search-box {
+    margin: 2rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    font-size: large;
+  }
 }
 
 /* ****************** Single Guitar Page ************/

@@ -2,6 +2,10 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import "./products-style.css";
+
+import "./products-style.css";
+
 const Guitar = ({ data, filterGuitar }) => {
   return (
     <React.Fragment>

@@ -7,6 +7,8 @@ import SearchBox from "./SearchBox";
 import Pagination from "./Pagination";
 import Guitar from "./Guitar";
 
+import "./products-style.css";
+
 const Products = () => {
   const { closeSubmenu } = useGlobalContext();
   //const [searchField, setSearchField] = useState("");
@@ -55,7 +57,7 @@ const Products = () => {
   return (
     <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
-        <div className="hero-center products">
+        <div className="hero-center">
           <article className="hero-info guitar-info">
             <div className="guitar-category">
               <div className="guitar-brand">
