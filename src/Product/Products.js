@@ -57,8 +57,8 @@ const Products = () => {
   return (
     <React.Fragment>
       <section className="products-page" onMouseOver={closeSubmenu}>
-        <div className="hero-center">
-          <article className="hero-info guitar-info">
+        <div className="product-hero-center">
+          <article className="product-hero-info guitar-info">
             <div className="guitar-category">
               <div className="guitar-brand">
                 <SearchBox searchGuitar={searchGuitar} />
