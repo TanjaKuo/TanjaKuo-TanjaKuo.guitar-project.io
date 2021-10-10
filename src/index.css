@@ -759,6 +759,7 @@ https://zurb.com/playground/motion-ui
 */
 
 /******************8 footer section **********************/
+
 .footer {
   width: auto;
   /* margin: 5rem auto; */
@@ -781,6 +782,12 @@ https://zurb.com/playground/motion-ui
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin-bottom: 2rem;
   padding: 2rem;
+}
+
+.final-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .disabled {
