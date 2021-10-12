@@ -133,9 +133,7 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 ### Projects Page - My Personal Projects
 
 ![Projects](docs/new-projects.png)
-
-![Projects](docs/projects.jpeg)
-![Projects](docs/projects-mobile.jpeg)
+![Projects](docs/new-projects-mobile.png)
 
 ### Blog Page - My Blog Posts
 
