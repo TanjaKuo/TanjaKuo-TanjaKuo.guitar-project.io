@@ -122,26 +122,20 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 ### Product - Guitar Product
 
-![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product.png)
-![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product-mobile.png)
+![Product](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product.png)
+![Product](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product-mobile.png)
 
-### Skills Page - Learned Programming Languages, Skills and Certifications
+### Blog - Latest Guitar World News && Guitar History
 
-<img src="./doc/product-mobile.png" width="300">
+![Blog](https://github.com/TanjaKuo/guitar-project/blob/main/doc/blog.png)
+![Blog](https://github.com/TanjaKuo/guitar-project/blob/main/doc/blog-mobile.png)
 
-![Skills](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product.png)
+### Contact - Contact Form
 
-### Projects Page - My Personal Projects
+![Contact](https://github.com/TanjaKuo/guitar-project/blob/main/doc/contact.png)
+![Contact](https://github.com/TanjaKuo/guitar-project/blob/main/doc/contact-mobile.png)
 
-![Projects](docs/new-projects.png)
-![Projects](docs/new-projects-mobile.png)
+### FAQ - Fraquently Asked Questions
 
-### Blog Page - My Blog Posts
-
-![Blog](docs/blog.jpeg)
-![Blog](docs/blog-mobile.jpeg)
-
-### Contact Page - My Contact Info and Message Form
-
-![Contact](docs/contact.jpeg)
-![Contact](docs/contact-mobile.jpeg)
+![FAQ](https://github.com/TanjaKuo/guitar-project/blob/main/doc/faq.png)
+![FAQ](https://github.com/TanjaKuo/guitar-project/blob/main/doc/faq-mobile.png)
