@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -72,3 +72,75 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fl3iPGL4nYnO9NFPYtQfZnA%2FUntitled%3Fnode-id%3D1%253A3" allowfullscreen></iframe>
+ -->
+
+# Mr.Guitar E-Commerce Website
+
+### Published link: [Mr. Guitar](https://mr-guitar.herokuapp.com/)
+
+## Purpose
+
+Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and UX friendly design. It is built with React with React Hooks and Material UI/css.
+
+## Features
+
+1. UI/UX Friendly for Desktop/ Mobile
+1. Interactive Design
+1. Information About Guitar Product
+1. Latest Guitar News
+1. Fraquently Asked Questions
+1. Contact form
+
+## Tech stack
+
+- React
+- React Hooks
+- Material UI
+- Sass/CSS
+  - Flexbox
+  - Grid
+  - Variables
+  - Mixin
+- Heroku
+
+## Design Concepts
+
+- Clean look
+- Interative Web App
+- No more than 5 colours
+
+## Sitemap
+
+![Sitemap](docs/mr-guitar-sitemap.png)
+
+## Screenshots
+
+### Home Page - Welcome to Karen Chang's Portfolio Webiste
+
+![Home](docs/home.jpeg)
+![Home](docs/home-mobile.jpeg)
+
+### About Me Page - About Myself, Achivements and Interests
+
+![About Me](docs/about-me.jpeg)
+![About Me](docs/about-me-mobile.jpeg)
+
+### Skills Page - Learned Programming Languages, Skills and Certifications
+
+![Skills](docs/skills.jpeg)
+![Skills](docs/skills-mobile.jpeg)
+
+### Projects Page - My Personal Projects
+
+![Projects](docs/projects.jpeg)
+![Projects](docs/projects-mobile.jpeg)
+
+### Blog Page - My Blog Posts
+
+![Blog](docs/blog.jpeg)
+![Blog](docs/blog-mobile.jpeg)
+
+### Contact Page - My Contact Info and Message Form
+
+![Contact](docs/contact.jpeg)
+![Contact](docs/contact-mobile.jpeg)
