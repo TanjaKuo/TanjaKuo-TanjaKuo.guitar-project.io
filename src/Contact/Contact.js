@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <section className="contact-page" onMouseOver={closeSubmenu}>
-        <div className="hero-center contact">
+        <div className="contact-hero-center">
           <article className="hero-info contact-info">
             <h1>contact Us</h1>
             <h4 className="number">ph: 0423235600</h4>
