@@ -111,6 +111,8 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 ## Sitemap
 
+![Sitemap]<img src="./doc/mr-guitar-sitemap.png" width="200">
+
 ![Sitemap](https://github.com/TanjaKuo/guitar-project/blob/main/doc/mr-guitar-sitemap.png =100x20)
 
 ![Sitemap](docs/mr-guitar-sitemap.png)
