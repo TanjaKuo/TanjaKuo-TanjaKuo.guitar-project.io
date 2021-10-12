@@ -113,13 +113,11 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 <img src="./doc/mr-guitar-sitemap.png" width="500">
 
-![Sitemap](https://github.com/TanjaKuo/guitar-project/blob/main/doc/mr-guitar-sitemap.png =100x20)
-
-![Sitemap](docs/mr-guitar-sitemap.png)
-
 ## Screenshots
 
 ### Home Page - Welcome to Karen Chang's Portfolio Webiste
+
+<img src="./doc/home.mov" width="500">
 
 ![Home](docs/home.jpeg)
 ![Home](docs/home-mobile.jpeg)
