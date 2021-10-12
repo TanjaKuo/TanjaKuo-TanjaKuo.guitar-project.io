@@ -111,7 +111,7 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 ## Sitemap
 
-<img src="./doc/mr-guitar-sitemap.png">
+<img src="./doc/mr-guitar-sitemap.png" width="500">
 
 ## Screenshots
 
@@ -122,8 +122,8 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 ### Product - Guitar Product
 
-<img src="./doc/new-product.png" width="500">
-![Skills](https://github.com/TanjaKuo/guitar-project/blob/main/doc/new-product-mobile.png)
+![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product.png)
+![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/product-mobile.png)
 
 ### Skills Page - Learned Programming Languages, Skills and Certifications
 
