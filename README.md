@@ -115,17 +115,15 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 ## Screenshots
 
-### Home Page - Welcome to Karen Chang's Portfolio Webiste
+### Home Page - Welcome to Mr. Guitar Home Page
 
 ![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/home.gif)
-![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/home.gif)
-![Home](docs/home.jpeg)
-![Home](docs/home-mobile.jpeg)
+![Home](https://github.com/TanjaKuo/guitar-project/blob/main/doc/mobile.gif)
 
-### About Me Page - About Myself, Achivements and Interests
+### Product - Guitar Product
 
-![About Me](docs/about-me.jpeg)
-![About Me](docs/about-me-mobile.jpeg)
+<img src="./doc/product.png" width="500">
+<img src="./doc/product-mobile.png" width="300">
 
 ### Skills Page - Learned Programming Languages, Skills and Certifications
 
