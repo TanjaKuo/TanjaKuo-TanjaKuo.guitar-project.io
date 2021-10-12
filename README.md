@@ -122,7 +122,7 @@ Mr. Guitar is an E-commerce Guitar website that provides that beautiful UI and U
 
 ### Product - Guitar Product
 
-<img src="./doc/product.png" width="500">
+<img src="./doc/new-product.png" width="500">
 ![Skills](https://github.com/TanjaKuo/guitar-project/blob/main/doc/new-product-mobile.png)
 
 ### Skills Page - Learned Programming Languages, Skills and Certifications
