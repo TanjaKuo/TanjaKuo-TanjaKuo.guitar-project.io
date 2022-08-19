@@ -1,6 +1,6 @@
 import React from "react";
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation";
-import { data } from "../subData";
+import { data } from "../datas/subData";
 import { useGlobalContext } from "../context";
 
 const Sidebar = () => {

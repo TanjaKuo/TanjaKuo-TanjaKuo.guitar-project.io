@@ -1,47 +1,47 @@
 /* yamaha guitar */
-import yamaha1 from "./image/YAMAHA/Yamaha-RS320BS.png";
-import yamaha2 from "./image/YAMAHA/Yamaha-RS320RC.png";
-import yamaha3 from "./image/YAMAHA/Yamaha-SA2200-Semi.png";
-import yamaha4 from "./image/YAMAHA/Yamaha-RS502TBG.png";
-import yamaha5 from "./image/YAMAHA/Yamaha-611VFM.png";
-import yamaha6 from "./image/YAMAHA/Yamaha-RS820CR.png";
-import yamaha7 from "./image/YAMAHA/Yamaha-RS720B.png";
-import yamaha8 from "./image/YAMAHA/Yamaha-RS620.png";
-import yamaha9 from "./image/YAMAHA/Yamaha-RS420FB.png";
-import yamaha10 from "./image/YAMAHA/Yamaha-RS420.png";
-import yamaha11 from "./image/YAMAHA/Yamaha-BBNE2.png";
-import yamaha12 from "./image/YAMAHA/Yamaha-TRBX605.png";
-import yamaha13 from "./image/YAMAHA/Yamaha-RSP20CR.png";
-import yamaha14 from "./image/YAMAHA/Yamaha-APX600.png";
+import yamaha1 from "../image/YAMAHA/Yamaha-RS320BS.png";
+import yamaha2 from "../image/YAMAHA/Yamaha-RS320RC.png";
+import yamaha3 from "../image/YAMAHA/Yamaha-SA2200-Semi.png";
+import yamaha4 from "../image/YAMAHA/Yamaha-RS502TBG.png";
+import yamaha5 from "../image/YAMAHA/Yamaha-611VFM.png";
+import yamaha6 from "../image/YAMAHA/Yamaha-RS820CR.png";
+import yamaha7 from "../image/YAMAHA/Yamaha-RS720B.png";
+import yamaha8 from "../image/YAMAHA/Yamaha-RS620.png";
+import yamaha9 from "../image/YAMAHA/Yamaha-RS420FB.png";
+import yamaha10 from "../image/YAMAHA/Yamaha-RS420.png";
+import yamaha11 from "../image/YAMAHA/Yamaha-BBNE2.png";
+import yamaha12 from "../image/YAMAHA/Yamaha-TRBX605.png";
+import yamaha13 from "../image/YAMAHA/Yamaha-RSP20CR.png";
+import yamaha14 from "../image/YAMAHA/Yamaha-APX600.png";
 
 /* fender guitar */
-import fender21 from "./image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
-import fender22 from "./image/FENDER/Fender-American-Original-50s-Stratocaster.png";
-import fender23 from "./image/FENDER/Fender-American-Acoustasonic-Jazzmaster.png";
-import fender24 from "./image/FENDER/Fender-Parallel-Universe-Volume-II-Uptown Strat.png";
-import fender25 from "./image/FENDER/Fender-Boxer-Series-Telecaster-HH.png";
-import fender26 from "./image/FENDER/Fender-Chrissie-Hynde-Telecaster.png";
-import fender27 from "./image/FENDER/Fender-vintera-50S-Telecaster.png";
-import fender28 from "./image/FENDER/Fender-America-Performer-Telecaster-Hum.png";
-import fender29 from "./image/FENDER/Fender-Special-Edition-Custom-Telecaster-FMT-HH.png";
-import fender30 from "./image/FENDER/Fender−Jim-Adkins-JA-90-Telecaster-Thinline.png";
-import fender31 from "./image/FENDER/Fender-Made-in-Japan-Traditional-50s-Telecaster.png"; //!!!
-import fender32 from "./image/FENDER/Fender−Newporter-Player.png";
-import fender33 from "./image/FENDER/Fender-Cory-Wong-Stratocaster-with-Rosewood-Fingerboard.png";
+import fender21 from "../image/FENDER/Fender-Parallel-Universe-II-Tele-Mágico.png";
+import fender22 from "../image/FENDER/Fender-American-Original-50s-Stratocaster.png";
+import fender23 from "../image/FENDER/Fender-American-Acoustasonic-Jazzmaster.png";
+import fender24 from "../image/FENDER/Fender-Parallel-Universe-Volume-II-Uptown Strat.png";
+import fender25 from "../image/FENDER/Fender-Boxer-Series-Telecaster-HH.png";
+import fender26 from "../image/FENDER/Fender-Chrissie-Hynde-Telecaster.png";
+import fender27 from "../image/FENDER/Fender-vintera-50S-Telecaster.png";
+import fender28 from "../image/FENDER/Fender-America-Performer-Telecaster-Hum.png";
+import fender29 from "../image/FENDER/Fender-Special-Edition-Custom-Telecaster-FMT-HH.png";
+import fender30 from "../image/FENDER/Fender−Jim-Adkins-JA-90-Telecaster-Thinline.png";
+import fender31 from "../image/FENDER/Fender-Made-in-Japan-Traditional-50s-Telecaster.png"; //!!!
+import fender32 from "../image/FENDER/Fender−Newporter-Player.png";
+import fender33 from "../image/FENDER/Fender-Cory-Wong-Stratocaster-with-Rosewood-Fingerboard.png";
 
-import gibson51 from "./image/GIBSON/Gibson-Orianthi-SJ200.png";
-import gibson52 from "./image/GIBSON/Gibson-ES335-Hollowbody.png";
-import gibson53 from "./image/GIBSON/Gibson-1957-SJ200.png";
-import gibson54 from "./image/GIBSON/Gibson-Kirk-Douglas.png";
-import gibson55 from "./image/GIBSON/Gibson-Murphy-Labs-61-ES335.png";
-import gibson56 from "./image/GIBSON/Gibson-Murphy-Labs-64.png";
-import gibson57 from "./image/GIBSON/Gibson-Murphy-Labs-63.png";
-import gibson58 from "./image/GIBSON/Gibson-Murphy-57.png";
-import gibson59 from "./image/GIBSON/Gibson-Murphy-64.png";
-import gibson60 from "./image/GIBSON/Gibson-ES-345.png";
-import gibson61 from "./image/GIBSON/Gibson-Slash-Les-Paul-Standard.png";
-import gibson62 from "./image/GIBSON/Gibson-Custom-Shop-1968-Les-Paul-Standard.png";
-import gibson63 from "./image/GIBSON/Gibson-Les-Paul-Special-Tribute-Humbucker.png";
+import gibson51 from "../image/GIBSON/Gibson-Orianthi-SJ200.png";
+import gibson52 from "../image/GIBSON/Gibson-ES335-Hollowbody.png";
+import gibson53 from "../image/GIBSON/Gibson-1957-SJ200.png";
+import gibson54 from "../image/GIBSON/Gibson-Kirk-Douglas.png";
+import gibson55 from "../image/GIBSON/Gibson-Murphy-Labs-61-ES335.png";
+import gibson56 from "../image/GIBSON/Gibson-Murphy-Labs-64.png";
+import gibson57 from "../image/GIBSON/Gibson-Murphy-Labs-63.png";
+import gibson58 from "../image/GIBSON/Gibson-Murphy-57.png";
+import gibson59 from "../image/GIBSON/Gibson-Murphy-64.png";
+import gibson60 from "../image/GIBSON/Gibson-ES-345.png";
+import gibson61 from "../image/GIBSON/Gibson-Slash-Les-Paul-Standard.png";
+import gibson62 from "../image/GIBSON/Gibson-Custom-Shop-1968-Les-Paul-Standard.png";
+import gibson63 from "../image/GIBSON/Gibson-Les-Paul-Special-Tribute-Humbucker.png";
 
 const guitarData = [
   {

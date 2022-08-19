@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import { data } from "./subData";
-import guitarData from "./guitarData";
+import { data } from "./datas/subData";
+import guitarData from "./datas/guitarData";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {

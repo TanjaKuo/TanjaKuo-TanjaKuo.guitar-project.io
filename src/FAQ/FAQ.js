@@ -2,7 +2,7 @@ import React from "react";
 import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
 
-import { faq } from "../subData";
+import { faq } from "../datas/subData";
 
 import "./faq-style.css";
 

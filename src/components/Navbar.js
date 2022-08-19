@@ -2,10 +2,6 @@ import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import MenuIcon from "@material-ui/icons/Menu";
-/* icon btn */
-import LoginIcon from "../Forms/LoginIcon";
-import ShopCartIcon from "../ShoppingCart/ShopCartIcon";
-//import SearchBox from "../Product/SearchBox";
 
 const Navbar = (props) => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
@@ -16,7 +12,7 @@ const Navbar = (props) => {
     } else {
       setColor("transparent");
     }
-  }, []); // remember to pass[] in the end
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
@@ -25,13 +21,12 @@ const Navbar = (props) => {
     };
   }, [changeColor]);
 
-  /*  add dynamic submenu height later 07.15 */
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
     const bottom = tempBtn.bottom - 3;
-    openSubmenu(page, { center, bottom }); // {center, bottom} -> {coordinate}
+    openSubmenu(page, { center, bottom });
   };
   const handleSubmenu = (e) => {
     if (!e.target.classList.contains("link-btn")) {
@@ -85,10 +80,6 @@ const Navbar = (props) => {
             </Link>
           </li>
         </ul>
-        {/* <li className="link-btn">
-          <ShopCartIcon />
-          <LoginIcon />
-        </li> */}
       </div>
     </nav>
   );

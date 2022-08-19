@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import FooterSidebar from "./FooterSidebar";
-import { footerInfo } from "../subData";
+import { footerInfo } from "../datas/subData";
 
 const Footer = () => {
   return (

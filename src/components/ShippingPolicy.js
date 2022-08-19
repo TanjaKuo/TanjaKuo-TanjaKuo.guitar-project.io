@@ -1,5 +1,5 @@
 import React from "react";
-import { shippingPolicy } from "../policyData";
+import { shippingPolicy } from "../datas/policyData";
 import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
 

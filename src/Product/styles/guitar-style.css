@@ -1,0 +1,66 @@
+.guitar-intro-products {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.guitar-intro-each {
+  justify-content: center;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guitar-intro-each:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: transparent;
+}
+
+.guitar-intro-pics {
+  width: 90%;
+  margin-bottom: 0.6rem;
+}
+
+.guitar-intro-name {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: medium;
+  color: #e5989b;
+}
+
+.guitar-intro-price {
+  color: var(--clr-whitish);
+}
+
+.guitar-intro-btn {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: transparent;
+  color: var(--clr-whitish);
+  align-content: center;
+  font-size: large;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .guitar-intro-products {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .guitar-intro-products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .guitar-intro-products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

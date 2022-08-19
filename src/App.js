@@ -14,21 +14,12 @@ import FAQ from "./FAQ/FAQ";
 import Error from "./Error/Error";
 
 /* Prodcuts */
-import Products from "./Product/Products";
+import ProductsPage from "./Product/ProductsPage";
 import SingleGuitar from "./Product/SingleGuitar";
 /* Blog */
 import Blog from "./Blog/Blog";
 import MexicanFender from "./Blog/MexicanFender";
 import FenderUSA from "./Blog/FenderUSA";
-
-/* Signin && Register forms*/
-import Forms from "./Forms/Forms";
-
-/* ShopCart */
-import ShopCartPage from "./ShoppingCart/ShopCartPage";
-/* testing */
-import TestingProducts from "./Product/TestingProducts";
-import TestingPage from "./TestingPage/TestingPage";
 
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -47,7 +38,7 @@ function App() {
           <Contact />
         </Route>
         <Route exact path="/products">
-          <Products />
+          <ProductsPage />
         </Route>
         <Route path="/products/:id" children={<SingleGuitar />}></Route>
         <Route exact path="/faq">

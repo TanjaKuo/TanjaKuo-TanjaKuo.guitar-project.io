@@ -4,7 +4,7 @@ import ProtoType from "prop-types";
 import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { bannerImg } from "../subData";
+import { bannerImg } from "../datas/subData";
 
 const Banner = () => {
   const settings = {

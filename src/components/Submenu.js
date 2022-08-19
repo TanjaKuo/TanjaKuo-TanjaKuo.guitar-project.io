@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useGlobalContext } from "../context";
-import guitarData from "../guitarData";
+import guitarData from "../datas/guitarData";
 
 const Submenu = () => {
   const {

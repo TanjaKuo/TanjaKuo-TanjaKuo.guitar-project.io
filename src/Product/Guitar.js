@@ -2,14 +2,12 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import "./products-style.css";
-
-import "./products-style.css";
+import "./styles/guitar-style.css";
 
 const Guitar = ({ data, filterGuitar }) => {
   return (
     <React.Fragment>
-      <article className="contact-section">
+      <article>
         <div className="guitar-intro-products">
           {data.map((one) => {
             return (

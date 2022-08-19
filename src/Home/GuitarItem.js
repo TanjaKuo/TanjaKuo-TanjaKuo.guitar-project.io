@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { guitarImg } from "../subData";
+import { guitarImg } from "../datas/subData";
 
 const GuitarItem = () => {
   const settings = {

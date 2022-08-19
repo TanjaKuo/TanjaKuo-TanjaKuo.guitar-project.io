@@ -915,6 +915,7 @@ https://zurb.com/playground/motion-ui
   .hours {
     color: var(--clr-whitish);
   }
+
   .holiday {
     color: var(--clr-red);
   }
@@ -1132,21 +1133,21 @@ https://zurb.com/playground/motion-ui
 .guitar-color {
   margin: 2rem;
 }
-
+/* 
 .category {
   color: var(--clr-red);
   text-align: center;
-}
+} */
 
-.category-btns {
+/* .category-btns {
   display: flex;
   flex-direction: column;
   max-width: fit-content;
-}
-
-.category-btn {
+} */
+/* 
+.category-btn {  ---> filterbtn
   max-width: 75vw;
-  /* padding-right: 2rem; */
+  padding-right: 2rem;
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   padding-bottom: 0.3rem;
@@ -1157,15 +1158,15 @@ https://zurb.com/playground/motion-ui
   font-size: large;
   text-align: center;
   text-transform: uppercase;
-}
+} */
 
-.category-btns-color {
+/* .category-btns-color {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* margin: 0.3rem; */
-}
-.category-btn-color {
+  margin: 0.3rem;
+} */
+/* .category-btn-color {
   width: 22vw;
   margin: 0.5rem;
   padding: 0.7rem;
@@ -1176,7 +1177,7 @@ https://zurb.com/playground/motion-ui
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+} */
 
 .guitar-intro-products {
   display: grid;
@@ -1269,7 +1270,7 @@ https://zurb.com/playground/motion-ui
     margin-left: 23rem;
     margin-top: -2rem;
   }
-  .category-btns {
+  /* .category-btns {
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -1302,7 +1303,7 @@ https://zurb.com/playground/motion-ui
     align-content: center;
     font-size: large;
     cursor: pointer;
-  }
+  } */
   .single-guitar-img {
     max-width: 50%;
     max-height: auto;

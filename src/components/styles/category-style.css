@@ -1,0 +1,9 @@
+.guitar-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  color: var(--clr-red);
+  text-align: center;
+}

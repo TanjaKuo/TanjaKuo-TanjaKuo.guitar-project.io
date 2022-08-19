@@ -1,0 +1,22 @@
+@media screen and (min-width: 800px) {
+  .single-guitar-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .single-guitar-image {
+    max-width: 350px;
+    max-height: 450px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .single-guitar-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .single-guitar-image {
+    min-width: 550px;
+    min-height: 750px;
+  }
+}

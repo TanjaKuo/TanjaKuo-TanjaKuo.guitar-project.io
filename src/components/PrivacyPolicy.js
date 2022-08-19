@@ -1,5 +1,5 @@
 import React from "react";
-import { privacyPolicy } from "../policyData";
+import { privacyPolicy } from "../datas/policyData";
 import Newsletter from "./Newsletter";
 import { useGlobalContext } from "../context";
 

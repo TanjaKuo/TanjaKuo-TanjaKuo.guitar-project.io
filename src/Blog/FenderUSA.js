@@ -2,7 +2,7 @@ import React from "react";
 import Newsletter from "../components/Newsletter";
 import { useGlobalContext } from "../context";
 
-import "./blog-style.css";
+import "./styles/blog-style.css";
 
 export const FenderUSA = () => {
   const { closeSubmenu } = useGlobalContext();
