@@ -35,6 +35,7 @@
 }
 
 .guitar-intro-btn {
+  border: 2px solid white;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   padding-left: 1rem;
@@ -46,10 +47,14 @@
   cursor: pointer;
 }
 
+.guitar-intro-btn:hover {
+  border: 2px solid black;
+}
+
 @media screen and (min-width: 800px) {
   .guitar-intro-products {
     grid-template-columns: 1fr 1fr;
-    margin-top: 50vh;
+    margin-top: 20vh;
   }
 }
 
