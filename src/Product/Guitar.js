@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import "./styles/guitar-style.css";
 
-const Guitar = ({ data, filterGuitar }) => {
+const Guitar = ({ data }) => {
   return (
     <React.Fragment>
       <article>
